@@ -42,6 +42,16 @@ When a method in the childfrom the parent class with the same name and signature
 
 ## Abstraction
 
+Property by virtue of which only essential details are displayed to the user.
+Process of identifying the required characteristics and ignore the rest.
+Java uses `abstract classes` and `interfaces` to implement the concept of encapsulation.
+
 
 ## Encapsulation
+
+The meaning of Encapsulation, is to make sure that _sensitive_ data is hidden from users.
+To achieve this, you must:
+
+- declare class variables/attributes as private
+- provide public get and set methods to access and update the value of a private variable
 

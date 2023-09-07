@@ -8,9 +8,9 @@ This repository consists of my notes on various programming topics
 
 1. [Object-Oriented Programming System](/oops)
 2. [SOLID Principles](/solid)
-3. Design Patterns
-4. Data Structures
-5. Algorithms
+3. [Design Patterns](/design_patterns)
+4. Data Structures [TBA]
+5. Algorithms [TBA]
 
 **Database**
 
@@ -23,7 +23,7 @@ This repository consists of my notes on various programming topics
 9. FastAPI [TBA]
 10. Java Fundamentals
 11. Spring Boot
-12. Microservices
+12. [Microservices](/microservices)
 
 **Front End**
 
@@ -54,28 +54,28 @@ This repository consists of my notes on various programming topics
 
 *OOPS*
 - [ ] Abstraction
-- [ ] Inheritance
-- [ ] Polymorphsim
+- [X] Inheritance
+- [X] Polymorphsim
 - [ ] Encapsulation
 
 *SOLID Principles*
-- [ ] Single Responsibility Principle
-- [ ] Open-Closed Principle
-- [ ] Liskov Substitution Principle
-- [ ] Interface Segregation Principle
-- [ ] Dependency Inversion
+- [X] Single Responsibility Principle
+- [X] Open-Closed Principle
+- [X] Liskov Substitution Principle
+- [X] Interface Segregation Principle
+- [X] Dependency Inversion
 
 *Design Patterns*
 - [ ] Protoype
-- [ ] Factory
-- [ ] Abstract Factory
+- [X] Factory
+- [X] Abstract Factory
 - [ ] Builder
-- [ ] Singleton
-- [ ] Adapter
+- [X] Singleton
+- [X] Adapter
 - [ ] Bridge
 - [ ] Composite
 - [ ] Proxy
-- [ ] Facade
+- [X] Facade
 - [ ] Decorator
 - [ ] Flyweight
 - [ ] Chain of Responsibility
