@@ -39,13 +39,9 @@ public class Area {
 
 When a method in the childfrom the parent class with the same name and signature is inherited and modified in the child class, this is known as function overriding.
 
-## Liskov Substitution Principle
 
-Let f(x) be a property of provable about objects x of type T. Then f(y) should be true for objects y of type S where S is a subtype of T.
-*If a function takes an instance of a class, then the same function should also be able to take an instance of the derived class.*
-- This principle teaches you to inherit properly
-- If inheritance is correct, then LSP is not violated. If LSP is violated, then inheritance is incorrect and code needs to be refactored.
+## Abstraction
 
 
-## Iterface Segregation Principle
+## Encapsulation
 

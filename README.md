@@ -6,8 +6,8 @@ This repository consists of my notes on various programming topics
 
 **Fundamentals**
 
-1. Object-Oriented Programming System
-2. SOLID Principles
+1. [Object-Oriented Programming System](/oops)
+2. [SOLID Principles](/solid)
 3. Design Patterns
 4. Data Structures
 5. Algorithms
