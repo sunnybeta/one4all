@@ -39,13 +39,19 @@ public class Area {
 
 When a method in the childfrom the parent class with the same name and signature is inherited and modified in the child class, this is known as function overriding.
 
-## Liskov Substitution Principle
 
-Let f(x) be a property of provable about objects x of type T. Then f(y) should be true for objects y of type S where S is a subtype of T.
-*If a function takes an instance of a class, then the same function should also be able to take an instance of the derived class.*
-- This principle teaches you to inherit properly
-- If inheritance is correct, then LSP is not violated. If LSP is violated, then inheritance is incorrect and code needs to be refactored.
+## Abstraction
+
+Property by virtue of which only essential details are displayed to the user.
+Process of identifying the required characteristics and ignore the rest.
+Java uses `abstract classes` and `interfaces` to implement the concept of encapsulation.
 
 
-## Iterface Segregation Principle
+## Encapsulation
+
+The meaning of Encapsulation, is to make sure that _sensitive_ data is hidden from users.
+To achieve this, you must:
+
+- declare class variables/attributes as private
+- provide public get and set methods to access and update the value of a private variable
 
