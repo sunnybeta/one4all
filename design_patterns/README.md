@@ -69,3 +69,15 @@ public class Singleton {
 - Simplest Structural Design Pattern
 - Good to think about API design
 
+
+## Prototype
+
+## Iterator
+
+## Builder
+
+## ...
+
+## Strategy
+
+## Flyweight
