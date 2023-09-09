@@ -43,20 +43,19 @@ This repository consists of my notes on various programming topics
 **Continuous Integration & Continuous Deployment**
 
 19. GitHub Actions [TBA]
+20. Jenkins
 
 **Monitoring**
 
-20. Prometheus [TBA]
-
-
+21. Prometheus [TBA]
 
 **TODO**
 
 *OOPS*
-- [ ] Abstraction
+- [X] Abstraction
 - [X] Inheritance
 - [X] Polymorphsim
-- [ ] Encapsulation
+- [X] Encapsulation
 
 *SOLID Principles*
 - [X] Single Responsibility Principle
@@ -66,24 +65,24 @@ This repository consists of my notes on various programming topics
 - [X] Dependency Inversion
 
 *Design Patterns*
-- [ ] Protoype
 - [X] Factory
 - [X] Abstract Factory
-- [ ] Builder
 - [X] Singleton
 - [X] Adapter
+- [X] Facade
+- [o] Protoype
+- [o] Flyweight
+- [o] Observer
+- [ ] Chain of Responsibility
+- [ ] Strategy
+- [ ] Iterator
+- [ ] Builder
 - [ ] Bridge
 - [ ] Composite
 - [ ] Proxy
-- [X] Facade
 - [ ] Decorator
-- [ ] Flyweight
-- [ ] Chain of Responsibility
-- [ ] Observer
-- [ ] Iterator
 - [ ] Command
 - [ ] Mediator
-- [ ] Strategy
 - [ ] Memento
 - [ ] State
 - [ ] Visitor
@@ -91,8 +90,10 @@ This repository consists of my notes on various programming topics
 
 *AWS*
 - [ ] AWS Fundamentals 
+- [ ] S3
 - [ ] Simple Queue Service
 - [ ] Simple Notification Service
 - [ ] Event Bridge
 - [ ] Cloud Formation Template
 - [ ] AWS SDK
+
