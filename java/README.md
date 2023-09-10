@@ -224,3 +224,69 @@ public class Printer<T extends Vehicle & Animal> { // keep the class name first 
     }
 }
 ```
+
+
+## Streaming API
+
+Stream API is a way to process collection of objects enabling us to perform operations like filtering, mapping, reducing and sorting.
+
+- Stream takes input from collections, arrays or I/O channesl
+- Each intermediate operation is lazily executed and returns a stream as a result.
+
+### Intermediate Operation
+
+#### Map
+
+Map method is used to return a stream consisting of the results of applying the given functions to the elements of this stream.
+
+```java
+List nums = Arrays.asList(2,3,4,5);
+List double = nums.stream().map(x -> x*2).collect(Collectors.toList());
+```
+
+#### Filter
+
+Filter method is used to select elements based on certain conditions.
+
+```java
+List nums = Arrays.asList(2,3,4,5);
+List double = nums.stream().filter(x -> x%2 == 1).collect(Collectors.toList());
+```
+
+#### Sorted
+
+```java
+List nums = Arrays.asList(5,4,3,2);
+List double = nums.stream().sorted().collect(Collectors.toList());
+```
+
+### Terminate Operation
+
+#### Collect
+
+The collect method returns the result of the intermediate operations.
+
+```java
+List nums = Arrays.asList(5,4,3,2);
+List double = nums.stream().map(x -> x*x).collect(Collectors.toSet());
+```
+
+#### For Each
+
+This method is used to iterate through every element of the stream.
+
+```java
+List nums = Arrays.asList(5,4,3,2);
+List double = nums.stream().map(x->x+1).forEach(y->System.out.println(y));
+```
+
+#### Reduce
+
+Reduce method is used to reduce the stream to a single value.
+
+```java
+List nums = Arrays.asList(5,4,3,2);
+int even = nums.stream().reduce(0, (ans, i) -> ans + i);
+```
+
+

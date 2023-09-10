@@ -15,21 +15,21 @@ This repository consists of my notes on various programming topics
 **Database**
 
 6. PostgreSQL
-7. MongoDB [TBA]
+7. MongoDB
 
 **Back End**
 
-8. Python [TBA]
-9. FastAPI [TBA]
-10. Java Fundamentals
-11. Spring Boot
+8. Python
+9. FastAPI
+10. [Java Fundamentals](/java)
+11. [Spring Boot](/springboot)
 12. [Microservices](/microservices)
 
 **Front End**
 
-11. Javascript Fundamentals
-12. VueJS
-13. NextJS [TBA]
+11. [Javascript Fundamentals](/javascript)
+12. [VueJS](/vue)
+13. NextJS
 
 **Cloud AWS**
 
@@ -71,8 +71,8 @@ This repository consists of my notes on various programming topics
 - [X] Adapter
 - [X] Facade
 - [o] Protoype
-- [o] Flyweight
-- [o] Observer
+- [ ] Flyweight
+- [ ] Observer
 - [ ] Chain of Responsibility
 - [ ] Strategy
 - [ ] Iterator
@@ -97,3 +97,31 @@ This repository consists of my notes on various programming topics
 - [ ] Cloud Formation Template
 - [ ] AWS SDK
 
+*System Design*
+
+- [ ] airbnb_search
+- [ ] amazon
+- [ ] bank
+- [ ] calculator
+- [ ] dropbox
+- [ ] ecommerce
+- [ ] google_maps
+- [ ] instagram
+- [ ] irctc
+- [ ] leetcode
+- [ ] netflix
+- [ ] notification
+- [ ] parking_lot
+- [ ] rate_limiter
+- [ ] reddit
+- [ ] search_engine
+- [ ] spotify
+- [ ] tiktok
+- [ ] twitter
+- [ ] uber
+- [ ] upi
+- [ ] url_shortner
+- [ ] webcrawler
+- [ ] whatsapp
+- [ ] youtube
+- [ ] zomato
