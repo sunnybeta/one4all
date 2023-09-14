@@ -70,7 +70,7 @@ This repository consists of my notes on various programming topics
 - [X] Singleton
 - [X] Adapter
 - [X] Facade
-- [o] Protoype
+- [ ] Protoype
 - [ ] Flyweight
 - [ ] Observer
 - [ ] Chain of Responsibility
