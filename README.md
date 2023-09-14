@@ -8,7 +8,7 @@ This repository consists of my notes on various programming topics
 
 1. [Object-Oriented Programming System](/oops)
 2. [SOLID Principles](/solid)
-3. [Design Patterns](/design_patterns)
+3. [Design Patterns](/designpatterns)
 4. Data Structures [TBA]
 5. Algorithms [TBA]
 
