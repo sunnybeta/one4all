@@ -29,13 +29,13 @@ identifies who you are on AWS.
 
 ```json
 {
-    "Verison": "2023-09-14,
+    "Verison": "2023-09-14",
     "Statement": [
         {
             "Sid": "CreateS3",
             "Effect": "Allow",
             "Action": [
-                s3:CreateBucket",
+                "s3:CreateBucket",
             ],
             "Resource": "*",
         }
@@ -47,7 +47,7 @@ identifies who you are on AWS.
 
 ```json
 {
-    "Verison": "2023-09-14,
+    "Verison": "2023-09-14",
     "Statement": [
             {
                 "Sid": "ReadOnlyAccexs",
