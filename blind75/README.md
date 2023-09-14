@@ -12,6 +12,7 @@ Link: [Two Sum](https://leetcode.com/problems/two-sum/)
 
 <details>
 <summary>Solution</summary>
+
 ```python
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -21,7 +22,7 @@ class Solution:
                 return[i,di[target-num]]
             di[num] = i
 ```
-</details
+</details>
 
 ### Question 2
 
@@ -36,6 +37,7 @@ Link: [Best Time To Buy and Sell](https://leetcode.com/problems/best-time-to-buy
 
 <details>
 <summary>Solution</summary>
+
 ```cpp
 public:
     int maxProfit(vector<int>& prices) {
@@ -49,6 +51,7 @@ public:
     }
 }
 ```
+</details>
 
 ### Quesstion 3
 
@@ -58,6 +61,7 @@ Link: [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
 
 <details>
 <summary>Solution</summary>
+
 ```java
 class Solution {
     public int missingNumber(int[] nums) {
@@ -70,5 +74,4 @@ class Solution {
 }
 ```
 </details>
-
 
