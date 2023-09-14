@@ -72,6 +72,10 @@ public class Singleton {
 
 ## Prototype
 
+- Creational Design Patter
+- Allows cloning of object without coupling to the specific classes
+
+
 ## Iterator
 
 ## Builder
