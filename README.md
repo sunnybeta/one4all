@@ -21,14 +21,14 @@ This repository consists of my notes on various programming topics
 
 8. Python
 9. FastAPI
-10. [Java Fundamentals](/java)
-11. [Spring Boot](/springboot)
+10. [Java Fundamentals](/lang/java)
+11. [Spring Boot](/backend/springboot)
 12. [Microservices](/microservices)
 
 **Front End**
 
-11. [Javascript Fundamentals](/javascript)
-12. [VueJS](/vue)
+11. [Javascript Fundamentals](/lang/javascript)
+12. [VueJS](/frontend/vue)
 13. NextJS
 
 **Cloud AWS**

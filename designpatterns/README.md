@@ -2,16 +2,16 @@
 
 ## Adapter
 
-You have to connect two interfaces which are not compatible with each other (for example, when legacy code needs to be integrated with new code).
+- You have to connect two interfaces which are not compatible with each other (for example, when legacy code needs to be integrated with new code).
 
 
-## Factory Factory
+## Factory
 
 - Creational Design Pattern
 - Userful for creation of objects that fall under same categorization but still have different properties.
 - Hleps in hiding complexity of object creation of various types
 
-## Abstract Faoctory Method
+## Abstract Factory Method
 
 - Creational Design Pattern
 - A factory of factory pattern
