@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class AdapterDesignPatter {
+public class AdapterDesignPattern {
 	public static void main(String[] args) {
 		System.out.println("Adapter Design Pattern");
 		/* Test Data */
@@ -68,7 +68,7 @@ class SchoolStudent  {
 }
 
 
-/* We can write an *adapter class* which implemnts the `Student` class through the incompatible `SchoolStuden ` class */
+/* We can write an *adapter class* which implemnts the `Student` class through the incompatible `SchoolStudent` class */
 class SchoolStudentAdapter implements Student {
 	private SchoolStudent schoolStudent;
 

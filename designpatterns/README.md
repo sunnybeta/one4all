@@ -1,8 +1,33 @@
 # Design Patterns
 
-## Adapter
 
-- You have to connect two interfaces which are not compatible with each other (for example, when legacy code needs to be integrated with new code).
+### Contents
+
+#### Structural
+
+1. [Adapter](adapter)
+2. Bridge
+3. Composite
+4. Decorator
+5. Facade
+6. Flyweight
+7. Proxy
+
+#### Creational
+
+8. Factory
+9. Abstarct Factory
+10. [Prototype](prototype)
+11. Singleton
+12. Builder
+
+#### Behavioral
+
+13. Chain of Responsibility
+14. Command
+15. Iterator
+16. Observer
+17. Strategy
 
 
 ## Factory
@@ -69,19 +94,3 @@ public class Singleton {
 - Simplest Structural Design Pattern
 - Good to think about API design
 
-
-## Prototype
-
-- Creational Design Patter
-- Allows cloning of object without coupling to the specific classes
-
-
-## Iterator
-
-## Builder
-
-## ...
-
-## Strategy
-
-## Flyweight
