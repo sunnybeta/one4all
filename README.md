@@ -8,7 +8,7 @@ This repository consists of my notes on various programming topics
 
 1. [Object-Oriented Programming System](/oops)
 2. [SOLID Principles](/solid)
-3. [Design Patterns](/design_patterns)
+3. [Design Patterns](/designpatterns)
 4. Data Structures [TBA]
 5. Algorithms [TBA]
 
@@ -21,14 +21,14 @@ This repository consists of my notes on various programming topics
 
 8. Python
 9. FastAPI
-10. [Java Fundamentals](/java)
-11. [Spring Boot](/springboot)
+10. [Java Fundamentals](/lang/java)
+11. [Spring Boot](/backend/springboot)
 12. [Microservices](/microservices)
 
 **Front End**
 
-11. [Javascript Fundamentals](/javascript)
-12. [VueJS](/vue)
+11. [Javascript Fundamentals](/lang/javascript)
+12. [VueJS](/frontend/vue)
 13. NextJS
 
 **Cloud AWS**
@@ -70,7 +70,7 @@ This repository consists of my notes on various programming topics
 - [X] Singleton
 - [X] Adapter
 - [X] Facade
-- [o] Protoype
+- [X] Protoype
 - [ ] Flyweight
 - [ ] Observer
 - [ ] Chain of Responsibility
