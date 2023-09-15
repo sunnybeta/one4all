@@ -1,82 +1,64 @@
-# Programming Fundamentals
+# Software Engineering Fundamentals
 
-This repository consists of my notes on various programming topics.
+This repository consists of my notes on various programming tools and topics.
 
 Feel free to raise issues for improvements or corrections.
 
-### Table of Contents
+### Contents
 
-**Fundamentals**
+**Core**
 
 * [Object-Oriented Programming System](/oops)
 * [SOLID Principles](/solid)
 * [Design Patterns](/designpatterns)
-* Data Structures [TBA]
-* Algorithms [TBA]
-* Blind 75 Leetcode [blind75]
-
+* [Blind 75 Leetcode](blind75)
+* Data Structures
+* Algorithms
 
 **Database**
 
 * [Database Theory](database)
-* PostgreSQL [TBA]
-* MongoDB [TBA]
+* PostgreSQL
+* MongoDB
 
 **Back End**
 
-* Python
 * [FastAPI](backend/fastapi)
-* [Java Fundamentals](/lang/java)
 * [Spring Boot](/backend/springboot)
+
+**Microservices**
 * [Microservices](/microservices)
 
 **Front End**
 
-* [Javascript Fundamentals](/lang/javascript)
-* [VueJS](/frontend/vue)
-* NextJS
+* [VueJS](frontend/vue)
+* [NextJS](frontend/next)
 
-**Cloud AWS**
-
-* AWS SDK
-* Cloud Formation Template
-* S3
-* Simple Queue Service
+**AWS**
+* [IAM](aws/iam)
+* [Cloud Formation Template](aws/cft)
+* [S3](aws/s3)
+* [Simple Queue Service](aws/sqs)
+* AWS CLI
 * Simple Notification Service
 * Event Bridge
 
 **Continuous Integration & Continuous Deployment**
 
-* GitHub Actions [TBA]
+* [Docker](cicd/docker)
+* GitHub Actions
 * Jenkins
 * Docker Compose
+* Prometheus
 
-**Monitoring**
-
-* Prometheus [TBA]
+**Languages**
+* [C](https://github.com/EternalParadiseFaith/letmec)
+* [Python](lang/python)
+* [Java](lang/java)
+* [Javascript](lang/javascript)
 
 **TODO**
 
-*OOPS*
-- [X] Abstraction
-- [X] Inheritance
-- [X] Polymorphsim
-- [X] Encapsulation
-
-*SOLID Principles*
-- [X] Single Responsibility Principle
-- [X] Open-Closed Principle
-- [X] Liskov Substitution Principle
-- [X] Interface Segregation Principle
-- [X] Dependency Inversion
-
-*Design Patterns*
-- [X] Factory
-- [X] Abstract Factory
-- [X] Singleton
-- [X] Adapter
-- [X] Facade
-- [X] Protoype
 - [ ] Flyweight
 - [ ] Observer
 - [ ] Chain of Responsibility
@@ -96,7 +78,6 @@ Feel free to raise issues for improvements or corrections.
 
 *AWS*
 - [ ] AWS Fundamentals 
-- [X] IAM
 - [ ] S3
 - [ ] Simple Queue Service
 - [ ] Simple Notification Service
