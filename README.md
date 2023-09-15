@@ -1,53 +1,59 @@
 # Programming Fundamentals
 
-This repository consists of my notes on various programming topics
+This repository consists of my notes on various programming topics.
+
+Feel free to raise issues for improvements or corrections.
 
 ### Table of Contents
 
 **Fundamentals**
 
-1. [Object-Oriented Programming System](/oops)
-2. [SOLID Principles](/solid)
-3. [Design Patterns](/designpatterns)
-4. Data Structures [TBA]
-5. Algorithms [TBA]
+* [Object-Oriented Programming System](/oops)
+* [SOLID Principles](/solid)
+* [Design Patterns](/designpatterns)
+* Data Structures [TBA]
+* Algorithms [TBA]
+* Blind 75 Leetcode [blind75]
+
 
 **Database**
 
-6. PostgreSQL
-7. MongoDB
+* [Database Theory](database)
+* PostgreSQL [TBA]
+* MongoDB [TBA]
 
 **Back End**
 
-8. Python
-9. FastAPI
-10. [Java Fundamentals](/lang/java)
-11. [Spring Boot](/backend/springboot)
-12. [Microservices](/microservices)
+* Python
+* [FastAPI](backend/fastapi)
+* [Java Fundamentals](/lang/java)
+* [Spring Boot](/backend/springboot)
+* [Microservices](/microservices)
 
 **Front End**
 
-11. [Javascript Fundamentals](/lang/javascript)
-12. [VueJS](/frontend/vue)
-13. NextJS
+* [Javascript Fundamentals](/lang/javascript)
+* [VueJS](/frontend/vue)
+* NextJS
 
 **Cloud AWS**
 
-14. AWS SDK
-15. Cloud Formation Template
-16. S3
-16. Simple Queue Service
-17. Simple Notification Service
-18. Event Bridge
+* AWS SDK
+* Cloud Formation Template
+* S3
+* Simple Queue Service
+* Simple Notification Service
+* Event Bridge
 
 **Continuous Integration & Continuous Deployment**
 
-19. GitHub Actions [TBA]
-20. Jenkins
+* GitHub Actions [TBA]
+* Jenkins
+* Docker Compose
 
 **Monitoring**
 
-21. Prometheus [TBA]
+* Prometheus [TBA]
 
 **TODO**
 
@@ -90,12 +96,19 @@ This repository consists of my notes on various programming topics
 
 *AWS*
 - [ ] AWS Fundamentals 
+- [X] IAM
 - [ ] S3
 - [ ] Simple Queue Service
 - [ ] Simple Notification Service
 - [ ] Event Bridge
 - [ ] Cloud Formation Template
 - [ ] AWS SDK
+- [ ] Lambda
+
+
+*DSA*
+
+- [ ] Blind Leetcoded **3/75**
 
 *System Design*
 

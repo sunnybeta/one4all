@@ -15,10 +15,10 @@
 
 #### Creational
 
-8. Factory
+8. [Factory](factory)
 9. Abstarct Factory
 10. [Prototype](prototype)
-11. Singleton
+11. [Singleton](singleton)
 12. Builder
 
 #### Behavioral

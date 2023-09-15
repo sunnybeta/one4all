@@ -1,0 +1,33 @@
+[project]
+name = "One-4-All"
+version = "1.0"
+description = "Tutorial for all"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["lolly", "marketing", "brands", "influencers", "advertisements"]
+
+authors = [
+  {name = "Shailesh Singh", email = "sunnybeta@protonmail.com" },
+]
+
+maintainers = [
+  {name = "Shailesh Singh", email = "sunnbeta@protonmail.com" },
+]
+
+classifiers = [
+  "Development Status :: Beta",
+  "Intended Audience :: Community",
+  "Programming Language :: Python :: 3.8",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+# [project.urls]
+# "Homepage" = "https://github.com/"
+# "Bug Reports" = "https://github.com/"
+# "Source" = "https://github.com/"
+
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"

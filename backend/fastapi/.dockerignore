@@ -1,0 +1,21 @@
+# Test
+tests/
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# Meta
+pyproject.toml
+
+# Git
+.gitignore
+README.md
+
+# Environment
+.venv/
+.env/
+
+# Cache
+__pycache__/
