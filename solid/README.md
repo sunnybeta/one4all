@@ -74,7 +74,7 @@ Let f(x) be a property of provable about objects x of type T. Then f(y) should b
 - If inheritance is correct, then LSP is not violated. If LSP is violated, then inheritance is incorrect and code needs to be refactored.
 
 
-## Iterface Segregation Principle
+## Interface Segregation Principle
 
 - No ocde should be forced to depend on function which it does not use.
 - Design interfaces in such a way that the classes that implement those interfaces do not have unused functions.
@@ -85,7 +85,7 @@ Let f(x) be a property of provable about objects x of type T. Then f(y) should b
 - _Dependency Inversion, Injection, Inversion Control are all diffent._
 - _Principle of Dependency Inversion Application of Dependency Inversion also mean different things._
  
-- High level modules should not depend on low level modules. Both should depend on abstraction
+- High level modules should not depend on low level modules. Both should depend on abstractions.
 - Abstraction should not depend on implementation. Implementation should depend on abstraction.
 
 
