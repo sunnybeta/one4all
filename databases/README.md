@@ -1,10 +1,10 @@
 # Database Theory
 
-## ACID Transaction
+## ACID
 
 ACID is a set of guiding principles that ensure database transactions are processed reliably.
 
-### Tranaction
+### Transaction
 
 A *transaction* is collection of queries or one unit of work. Example: Account Deposit (`SELECT`, `UPDATE`, `DELETE`)
 
