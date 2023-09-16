@@ -8,26 +8,27 @@ Feel free to raise issues for improvements or corrections.
 
 **Core**
 
-* [Object-Oriented Programming System](/oops)
-* [SOLID Principles](/solid)
-* [Design Patterns](/designpatterns)
+* [Object-Oriented Programming System](oops)
+* [SOLID Principles](solid)
+* [Design Patterns](designpatterns)
 * [Blind 75 Leetcode](blind75)
 * Data Structures
 * Algorithms
+* [System Design](systemdesign)
 
 **Database**
 
-* [Database Theory](database)
+* [Database Theory](databases)
 * PostgreSQL
 * MongoDB
 
 **Back End**
 
 * [FastAPI](backend/fastapi)
-* [Spring Boot](/backend/springboot)
+* [Spring Boot](backend/springboot)
 
 **Microservices**
-* [Microservices](/microservices)
+* [Microservices](microservices)
 
 **Front End**
 

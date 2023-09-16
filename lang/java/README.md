@@ -2,7 +2,7 @@
 
 ## Annotations
 
-Annotations are metadata / supplemntal information into your Java code.
+Annotations are metadata / supplemental information into your Java code.
 These do not affect the program directly but can be processed by the compiler or at runtime.
 
 ```java

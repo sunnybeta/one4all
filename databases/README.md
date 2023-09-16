@@ -35,6 +35,15 @@ Successful commits will survive permanently.
 
 ## Indexing
 
+An *index* is a small referential table that holds the row references against the index query.
+
+One can think of an index like a two column table sorted by the index value along with an ID.
+
+If we filter our records on some field, the database engine iterates over all the rows, read the required records, and checks if the particular row matches our criteria. If we have an index, we can read the index and create buffer which stores the required row IDs. Finally, we would like to get the relevant row data with this list of IDs.
+
+You may not need to iterate the entire index if you use *multilevel* indices.
+
+
 ## B+ Trees
 
 ## Sharding

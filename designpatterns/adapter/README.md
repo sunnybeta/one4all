@@ -89,7 +89,7 @@ class SchoolStudent  {
 }
 
 
-/* We can write an *adapter class* which implemnts the `Student` class through the incompatible `SchoolStuden ` class */
+/* We can write an *adapter class* which implements the `Student` class through the incompatible `SchoolStudent` class */
 class SchoolStudentAdapter implements Student {
 	private SchoolStudent schoolStudent;
 

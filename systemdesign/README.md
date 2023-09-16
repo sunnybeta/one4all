@@ -51,48 +51,65 @@ by other servers as well and not shifting the entire burden onto one server.
 
 ## CAP Theorem
 
-Conistency: Ensuring that all clients see the same data at the same time
-Availability: Ability of a system to respond to requests
-Partitiona Tolerance: Ability of a system to operate if there is a network partition (for example, due to network failures)
+**Conistency**: Ensuring that all clients see the same data at the same time
+
+**Availability**: Ability of a system to respond to requests
+
+**Partition Tolerance**: Ability of a system to operate if there is a network
+partition (for example, due to network failures)
 
 If a partition happens, the system must choose betwween *consistency* and
 *availbility*. If the system prioritises consistency, it may become unavailble
-until the partition is resolved. If the system prioritises availbility, it may
+until the partition is resolved. If the system prioritises availability, it may
 allow updates to the data resulting in data inconsistencies.
 
-**THEOREM**
-Consistency, Availbility & Partition Tolerance cannot be supported at the same time by a distributed system.
+**Consistency, Availbility & Partition Tolerance cannot be supported at the same
+time by a distributed system.**
 
 In real world, there is a degree of availbility and consistency which has to be
 kept in mind before designing a distributed system.
 
-## PACLEC Theorem
-
-## Caching
-
-## Latency
-
-## Resilience
-
-## Reverse Proxy & NGINX
-
-## Long Polling
-
-## Web Sockets 
-
-## Server Side Events
-
-## Kafka
-
-## Read / Write Ratio
-
 ## CDN
 
-A *CDN (Content Delivery Network)* brings content closer to the user as performance is critical to user engagement and retention. 
+A *CDN (Content Delivery Network)* brings content closer to the user as
+performance is critical to user engagement and retention. 
 
-To achieve this CDNs, deploy hundreds of servers all over the world. They are called PoP (Point of Presence) and the server inside them are called *Edge Server*. Each edge server acts as a reverse proxy with huge content cache.
+To achieve this CDNs, deploy hundreds of servers all over the world. They are
+called PoP (Point of Presence) and the server inside them are called
+*Edge Server*. Each edge server acts as a reverse proxy with huge content cache.
 
 If a piece of content is in the cache, it can be quickly returned the user.
 
-All TLS connections terminate at the edge server which significanyl decreases the latency for the user.
+All TLS connections terminate at the edge server which significanyl decreases
+the latency for the user.
+
+## PACLEC Theorem
+Coming Soon.
+
+## Caching
+Coming Soon.
+
+## Latency
+Coming Soon.
+
+## Resilience
+Coming Soon.
+
+## Reverse Proxy & NGINX
+Coming Soon.
+
+## Long Polling
+Coming Soon.
+
+## Web Sockets 
+Coming Soon.
+
+## Server Side Events
+Coming Soon.
+
+## Kafka
+Coming Soon.
+
+## Read / Write Ratio
+Coming Soon.
 
