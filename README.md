@@ -12,7 +12,7 @@ Feel free to raise issues for improvements or corrections.
 * [SOLID Principles](solid)
 * [Design Patterns](designpatterns)
 * [Blind 75 Leetcode](blind75)
-* Data Structures
+* [Data Structures](datastructures)
 * Algorithms
 * [System Design](systemdesign)
 

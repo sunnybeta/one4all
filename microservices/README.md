@@ -2,12 +2,17 @@
 
 **CONTENTS**
 
-1. API Gateway
-2. Messaging Guarantees
+* [Distirbuted Systems](#distributed-systems)
+* [API Gateway](#api-gateway)
+* [Messaging Guarantees](#messaging-guarantees)
+
+
+## Distributed Systems
+
+A distributed system is a system of components which are located on different networked computers communicating with each other via passing messages to one another or over a central componenet(s).
+
 
 ## API Gateway
-
-Source: ![redhat.com](https://www.redhat.com/en/topics/api/what-does-an-api-gateway-do)
 
 An API gateway is an API management tool that sits between a client and a collection of backend services. The API gateway intercepts all incoming requests and sends them through the API management system. It acts as a *reverse proxy to accept all API calls, aggregate the various services required to fulfull them, and return the appropriate results.
 
