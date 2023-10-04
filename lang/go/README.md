@@ -11,13 +11,7 @@ Please make sure to read them as well ![here](https://go.dev/doc/).
 4. Fast Compile Time
 5. Built-in concurrency
 
-## Contents
-
-1. Getting Started
-2. Modules & Packages
-3. Hello World
-
-### Getting Started
+## Getting Started
 
 Go here :D
 
@@ -31,7 +25,7 @@ go version # go version go1.21.1 linux/amd64
 
 to confirm your installation.
 
-### Modules & Packages
+## Modules & Packages
 
 A *package* is a folder of go files.
 A collection of packages is called a *module*.
@@ -48,7 +42,7 @@ package my_decent_package
 
 The `main` package is a special package name which tells the compiler to look for the entry point function, also named `main`, here.
 
-### Hello World
+## Hello World
 
 Create a file `main.go` with the following contents.
 
@@ -71,10 +65,10 @@ go build main.go
 ```
 
 
-### Data Types 
+## Data Types 
 
 
-#### Int
+### Int
 
 Signed Integer: `int`, `int8`, `int16`, `int32`, `int64`
 
@@ -83,7 +77,7 @@ Unsigned Integer: `uint`, `uint8`, `uint16`, `uint32`, `uint64`
 - Maximum value of `int8` type is `127`. Trying to initialize `int8` to `127+1` will give rise to a compiler error. This overflow error will not occur at runtime.
 - `int` defaults to int32 to int64 depending on your system architecture.
 
-#### Float
+### Float
 
 `float32`, `float64`
 
@@ -91,16 +85,16 @@ Unsigned Integer: `uint`, `uint8`, `uint16`, `uint32`, `uint64`
 - Think twice before you choose these data types. For example, to store RGB values unsigned 8 bit integers `uint8` is the best fit.
 
 
-#### Arithmetic Operations
+### Arithmetic Operations
 
-+, -, *, /, %
+Operator: `+`, `-`, `*`, `/`, `%`
 
 - We cannot perform arithmetic operations on different types. To perform this, we must cast one of the variables to the other type. `float32(myInt32Num)`
 - Integer divison is rounded down
 - 
-#### Strings
+### Strings
 
-Single Line: "This is a string on a single line"`
+Single Line: `"This is a string on a single line"`
 
 Multiple Line: `This is a string on the first
 
@@ -110,7 +104,7 @@ Concatenation: `"First String" + "Second String"`
 
 Length: `var myShortString string = "abc" // len(myString) = 3`
 
-#### Boolean
+### Boolean
 
 `true, `false`
 
@@ -118,7 +112,7 @@ Length: `var myShortString string = "abc" // len(myString) = 3`
 
 We now understand booleans in Go.
 
-#### Default Values
+### Default Values
 
 Go assigns default values to all variables when declareed.
 
@@ -128,7 +122,7 @@ Go assigns default values to all variables when declareed.
 
 `bool` -> `false`
 
-#### Note
+### Note
 
 1. Use every variable you declare or face the wrath of the compiler.
 2. We can choose not to set the type if we initialize the variable so that the type is inferred. Also, we can drop the var and go short hand with `:=`.
@@ -150,7 +144,7 @@ const constIsConst string = "I cannot change *sigh*"
 const pie float32 = 3.1415 
 ```
 
-### Control
+## Control
 
 Use the `func` keyword followed by the name of the function followed by parenthesis block for parameters and its types, followed by another parenthesis block mentioning the return type(s) of the function, and finally a curly braces block for the logic.
 
@@ -160,11 +154,11 @@ func myPoorFunction(firstName string, lastName string) (string) {
 }
 ```
 
-#### Handling Errors
+### Handling Errors
 
 The standard way of capturing and handling errors is to expect an `err` variable of type error along with the result of the function. This is a common design pattern while programming in Go.
 
-#### If-ElseIf-Else
+### If-ElseIf-Else
 ```go
 package main
 
@@ -183,7 +177,7 @@ func main(){
 		fmt.Println("Factor")
 	} else {
 		fmt.Printf("Quotient = %v, Remainder = %v\n", q, r)
-    }
+	}
 	fmt.Printf("Quotient = %v, Remainder = %v\n", q, r)
 }
 
@@ -199,7 +193,7 @@ func divide(a int, b int) (int,int,error) {
 }
 ```
 
-#### Switch
+### Switch
 
 ```go
 // General purpose switch statement
@@ -223,9 +217,9 @@ switch r{
 }
 ```
 
-### Slice and Dice
+## Slice and Dice
 
-#### Arrays
+### Arrays
 
 Data structure which contains a list of elements with the following properties.
 
@@ -251,7 +245,7 @@ myArr := [4]int32{1,2,3,4}
 myArr := [...]int32{1,2,3,4}
 ```
 
-#### Slice
+### Slice
 
 Slice, similar to array, is another data structre whose size is not fixed and contains additional spacec for newer elements.
 
@@ -280,7 +274,7 @@ arr = append(arr, arr...) // [4,5,6,7,4,5,6,7,*,*]
 
 ```
 
-#### Map
+### Map
 
 Map is a set of key-value pairs.
 
@@ -306,7 +300,7 @@ if exists == false {
 delete(mySecondMap, 2)
 ```
 
-#### Loop
+### Loop
 
 We use the `range` keyword within our `for` loop to iterate over maps and arrays.
 ```go
@@ -328,7 +322,7 @@ for i:=0; i<10; i++ {
 ```
 
 
-### Go and UTF-8
+## Go and UTF-8
 
 - When are are working with strings in Go, we are working with the underlying representation is an array of bytes. Thus iterating over non-ascii characters with range can give us strange results. A better appraoch would be to cast the string to a rune array.
 
@@ -340,7 +334,7 @@ myName1 := "Sunny Béta"         // len = 11 x| because é takes up to 2 bytes
 myName1 := []rune("Sunny Béta") // len = 10 :O because rune length is 10
 ```
 
-#### String Builder
+### String Builder
 
 Concatenating characters from string arrays is not efficient.
 
@@ -372,7 +366,7 @@ fmt.Println(myNewString)
 fmt.Println(cast)
 ```
 
-### Structs
+## Structs
 
 Structs are data strcutures which can contain fields of various types. Field types can be other structs as well.
 
@@ -412,7 +406,7 @@ func (o myStruct) prettyPrint() {
 
 Now any variable of type `myStruct` will have access to this function.
 
-### Interface
+## Interface
 
 Suppose we have two structs which share or require similar implementatons of the same method, we can instead create an interface.
 
@@ -431,7 +425,7 @@ func interfaceTest(o myInterface, b string)(string) {
 // Note that o can be any structure with a mustFunction method attached to it.
 ```
 
-### Pointers
+## Pointers
 
 Pointers are special type which store memory location.
 
@@ -449,17 +443,17 @@ We use the `&` symbol to assign a pointer `p` the address of the variable `i`.
 p = &i
 ```
 
-**Slices contains pointer to the underlying array**
+**Slices contains pointer to the underlying array.**
 
 Welcome to C.
 
 ## Good Luck
 
-### Goroutines
+## Goroutines
 
 Goroutines are a way to launch mltiple functions and have them execute concurrently.
 
-To run a line of code asynchornously, we simply add `go` before the statement.
+To run a line of code asynchronously, we simply add `go` before the statement.
 
 ```go
 func main(){
@@ -478,7 +472,7 @@ func dbcall(i int) { // function to simulate a db call
 }
 ```
 
-#### Wait Groups
+### Wait Groups
 
 *Wait Groups* are counters which keeps track of the number of concurrent tasks. This avoids your to stop early before the async tasks are completed.
 
@@ -512,7 +506,7 @@ func dbcall(i int) {
 ```
 
 
-#### Mutex
+### Mutex
 
 *What happens when a variable is being changed by multiple threads at the same time? This can lead to errors, corrupt data or imcomplete execution of the tasks.*
 
@@ -569,7 +563,7 @@ func log(i int) {
 ```
 
 
-### Channels
+## Channels
 
 Channels are a way to enable goroutines and pass wround information
 
@@ -577,7 +571,7 @@ Channels are a way to enable goroutines and pass wround information
 * Thread Safe : Avoids data race
 * Listen when data is added
 
-#### Unbuffered Channel
+### Unbuffered Channel
 
 ```go
 
@@ -643,7 +637,7 @@ Note that we have to close the channel before ending the function because the fo
 Closing the channel notifies the method that no more values should be expected.
 
  
-#### Buffered Channel
+### Buffered Channel
 
 In an unbuffered channel, the process stays active until the main function completes its tasks. Since there is no need for this, we can create an unbuffered channel allowing the process function to exit quickly.
 
@@ -676,7 +670,7 @@ func process(c chan int) {
 }
 ```
 
-#### Select
+### Select
 
 The select statement is a switch statement for channels.
 
@@ -690,7 +684,7 @@ select{
 ```
 
 
-### Generics
+## Generics
 
 If we have the same underlying logic for a function with different types, instead of writing them separately, we can use *generics* to write the function once, so that it works for all cases.
 
