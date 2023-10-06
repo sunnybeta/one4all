@@ -52,7 +52,7 @@ package main
 import "fmt"
 
 func main() {
-    fmt.Println("Hello, World!");
+    fmt.Println("Hello, World!")
 }
 ```
 
@@ -187,7 +187,7 @@ func divide(a int, b int) (int,int,error) {
 		err = errors.New("This is why education is so important")
 		return 0,0,err
 	}
-	var q int = a / b;
+	var q int = a / b
 	r := a % b
 	return q,r,err
 }
@@ -211,7 +211,7 @@ switch r{
     case 0:
         fmt.Println("Factor")
     case 1:
-        fmt.Println("Close but not quite ~ Viper");
+        fmt.Println("Close but not quite ~ Viper")
     default:
         fmt.Printf("What is this, a game of some sort?")
 }
@@ -388,7 +388,7 @@ a.field1 = "New Value"
 Structs defined anonymously are not resuable.
 
 ```go
-var b = myStruct2 struct {
+var b = struct {
     hours uint8
     minutes uint8
 }{4,20}
@@ -565,7 +565,7 @@ func log(i int) {
 
 ## Channels
 
-Channels are a way to enable goroutines and pass wround information
+Channels are a way to enable goroutines and pass around information
 
 * Hold data
 * Thread Safe : Avoids data race
