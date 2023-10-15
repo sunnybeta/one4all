@@ -47,9 +47,9 @@ Feel free to raise issues for improvements or corrections.
 **Continuous Integration & Continuous Deployment**
 
 * [Docker](cicd/docker)
+* [Kubenetes](cicd/k8s)
 * GitHub Actions
 * Jenkins
-* Docker Compose
 * Prometheus
 
 **Languages**
@@ -57,6 +57,7 @@ Feel free to raise issues for improvements or corrections.
 * [Python](lang/python)
 * [Java](lang/java)
 * [Javascript](lang/javascript)
+* [Go](lang/go)
 
 **TODO**
 
