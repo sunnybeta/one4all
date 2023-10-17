@@ -22,8 +22,6 @@ Trie *getNode() {
 
 
 
-
-
 ### Insert
 
 Every character in a trie is an individual edge starting from an initial node. When we come across a new character, we create another trie node using the children array. If the character is the last character of the string, we can mark that character as the *end of the word* and set the corresponding value to true.

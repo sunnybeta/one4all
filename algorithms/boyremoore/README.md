@@ -11,11 +11,14 @@ This is one of the popular optimal algorithms which is used for finding the majo
 - If votes become 0, select another new element as the new candidate.
 
 ```python
-def findMajority(arr, n):
+from typing import List
+
+def findMajority(arr: List[int]):
+	size = len(arr)
 	candidate = -1
 	votes = 0
 	 
-	for i in range (n):
+	for i in range(size):
 		if votes == 0:
 			candidate = arr[i]
 			votes = 1
@@ -23,5 +26,5 @@ def findMajority(arr, n):
 				votes += 1
 		else:
 			votes -= 1
-	return num,count(n) > n // 2
+	return arr.count(size) > size // 2
 ```

@@ -13,7 +13,7 @@ Feel free to raise issues for improvements or corrections.
 * [Design Patterns](designpatterns)
 * [Blind 75 Leetcode](blind75)
 * [Data Structures](datastructures)
-* Algorithms
+* [Algorithms](algorithms)
 * [System Design](systemdesign)
 
 **Database**
