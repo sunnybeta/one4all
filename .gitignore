@@ -1,2 +1,12 @@
 # Binary
 bin/
+
+# Node
+node_modules/
+package-lock.json
+
+# Go Gin
+server
+
+# Java
+*.class

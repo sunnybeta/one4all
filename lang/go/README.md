@@ -106,7 +106,7 @@ Length: `var myShortString string = "abc" // len(myString) = 3`
 
 ### Boolean
 
-`true, `false`
+`true`, `false`
 
 `var myBool bool = true`
 
@@ -150,7 +150,7 @@ Use the `func` keyword followed by the name of the function followed by parenthe
 
 ```go
 func myPoorFunction(firstName string, lastName string) (string) {
-    return firstName + lastName)
+    return firstName + lastName
 }
 ```
 
