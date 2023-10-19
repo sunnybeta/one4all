@@ -10,3 +10,4 @@
 3. Depth-First Search
 4. [Binary Search](binarysearch)
 5. [Kahn's Algorithm](kahn)
+6. [Kadane Algorithm](kadane)

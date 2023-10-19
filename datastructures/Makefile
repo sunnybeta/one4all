@@ -1,5 +1,5 @@
 CC = cc
-DS = list stack
+DS = linkedlist stack
 BIN = bin
 
 all: dirs $(DS)

@@ -10,3 +10,6 @@ server
 
 # Java
 *.class
+
+# Python
+.venv
