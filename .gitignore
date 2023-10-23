@@ -14,3 +14,4 @@ server
 
 # Python
 .venv
+__pycache__/

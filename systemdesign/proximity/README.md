@@ -1,6 +1,6 @@
 # Proximity Service
 
-*Proximity Service* is commonly found as abackend component to find closest business locations like restaurants or gas stations in Yelp and Google Maps.
+*Proximity Service* is commonly found as baackend component to find closest business locations like restaurants or gas stations in Yelp and Google Maps.
 
 ## Problem
 
@@ -46,11 +46,11 @@ Storage for goespatial data: `200_000_000 * 8 * 3 = ~5 GB`
 {
     "count": 10,
     "data": {
-        "business": [BusinessObject1, BusinessObject2, ...]
+        "business": ["BusinessObject1", "BusinessObject2"]
     }
     "pagination": {
         "page_size": 10,
-        "page_number": 2,
+        "page_number": 2
     }
 }
 ```
@@ -104,16 +104,16 @@ Distributes incoming requests across two services based on API routes.
 * QPS is not for reads high. Changes don't need to take affect right away.
 * Great candidate for caching
 
- o        +-------------+       +-----------------------+
--|- ----> |LOAD BALANCER| ----> |Location Search Service| 
-/|\       +-------------+       +-----------------------+
-                 |
-                 |
-                 |
-                 V
-         +----------------+
-         |Business Service|
-         +----------------+
+         o        +-------------+       +-----------------------+
+        -|- ----> |LOAD BALANCER| ----> |Location Search Service| 
+        /|\       +-------------+       +-----------------------+
+                         |
+                         |
+                         |
+                         V
+                 +----------------+
+                 |Business Service|
+                 +----------------+
 
 ## Database
 
@@ -155,7 +155,7 @@ The entire database including the geohash can fit in `~ 6 GB` of memory. Since t
 
 ## Caching
 
-* Do we need a caching layer?
+*Do we need a caching layer?*
 
 For our Business API, since it is read heavy we can put a caching layer in front for frequently access data.
 

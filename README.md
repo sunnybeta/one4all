@@ -26,6 +26,7 @@ Feel free to raise issues for improvements or corrections.
 
 * [FastAPI](backend/fastapi)
 * [Spring Boot](backend/springboot)
+* [Gin](backed/gin)
 
 **Microservices**
 * [Microservices](microservices)
@@ -59,10 +60,13 @@ Feel free to raise issues for improvements or corrections.
 * [Javascript](lang/javascript)
 * [Go](lang/go)
 
+**System Design**
+* [Proximity Service](systemdesign/proximity)
+
 **TODO**
 
 - [ ] Flyweight
-- [ ] Observer
+- [X] Observer
 - [ ] Chain of Responsibility
 - [ ] Strategy
 - [ ] Iterator

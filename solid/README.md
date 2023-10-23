@@ -3,7 +3,7 @@
 ## Single Responsibility Principle
 
 - One class should have only one responsilibilty and only one reason to change
-- Any software entities should have a reason to change by only one actor. 
+- Any software entities should have a reason to change by only one actor 
 - Software entities should cater changes to particular stakeholder
 
 ## Open-Closed Principle
@@ -69,7 +69,9 @@ public class Area {
 ## Liskov Substitution Principle
 
 Let f(x) be a property of provable about objects x of type T. Then f(y) should be true for objects y of type S where S is a subtype of T.
+
 *If a function takes an instance of a class, then the same function should also be able to take an instance of the derived class.*
+
 - This principle teaches you to inherit properly
 - If inheritance is correct, then LSP is not violated. If LSP is violated, then inheritance is incorrect and code needs to be refactored.
 
@@ -83,13 +85,14 @@ Let f(x) be a property of provable about objects x of type T. Then f(y) should b
 ## Dependency Inversion Principle
 
 - _Dependency Inversion, Injection, Inversion Control are all diffent._
-- _Principle of Dependency Inversion Application of Dependency Inversion also mean different things._
+- _Principle of Dependency Inversion and  Application of Dependency Inversion also mean different things._
  
 - High level modules should not depend on low level modules. Both should depend on abstractions.
 - Abstraction should not depend on implementation. Implementation should depend on abstraction.
 
 
-- Suppose `class A` is dependent on `class B`, then we can invert dependency by introductin an `interface B`.
+- Suppose `class A` is dependent on `class B`, then we can invert dependency by introducing an `interface B`.
 Now, `class A` depends on `interface B` and `class B` depends on `interface B`.
 
 - Prevents mocking of dependencies during testing.
+
