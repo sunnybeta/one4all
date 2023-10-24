@@ -10,11 +10,13 @@
 
 ## REST
 
-**RE**presentational **S**tate **T**ransfer is an architectural style for developing web services. REST is popular due to its simplicity and the fact that it builds upon existing systems and features of the internet's Hypertext Transfer Protocol (HTTP) in order to achieve its objectives, as opposed to creating new standards, frameworks and technologies.
+**RE**presentational **S**tate **T**ransfer is an architectural style for developing web services.
+REST is popular due to its simplicity and the fact that it builds upon existing systems and features of the internet's Hypertext Transfer Protocol (HTTP) in order to achieve its objectives, as opposed to creating new standards, frameworks and technologies.
 
 ## HTTP Methods
 
-The methods mentioned below are from my research and understanding. The definitions and usage can differ in real world APIs.
+The methods mentioned below are from my research and understanding.
+The definitions and usage can differ in real world APIs.
 
 ### GET
 
@@ -102,18 +104,94 @@ ORM is a bridge between data representations from different resources.
 
 ## OSI Model
 
+OSI *(Open Systems Interconnection)* is a conceptual framework for how applications communicate over a network.
+It consists of seven layers provided by network card drivers, operating systems and other networking hardwares to facilitate signals over fiber optics or wireless.
+
+7. Application
+6. Presentation
+5. Session
+4. Transport
+3. Network
+2. Data Link
+1. Physical
+
+### Application Layer
+
+The layer provides network services to the end user.
+These servies are protocols that work with the data that clients are using.
+All the network applications provide a set of services that allow the application layer to transfer data back and from the presentation layer.
+
+### Presentation Layer
+
+The presentation layer does syntax formatting or changing the data from one format from one to another.
+Sending data online is encrypted and decrpyted by the presentation layer.
+The data after encryption/decryption is then transferred to the application or session layer.
+
+### Session Layer
+
+The construction, direction and conclusion of connections between devices occurs in the session layer.
+
+### Transport Layer
+
+- Responsible for transmission of data across entwork connections.
+- Error recovery, data flow
+
+### Network Layer
+
+- Handles the routing of the data
+- Mapping of logical and physical address is handled here via ARP (address resolution protocol)
+
+### Data Link
+
+#### MAC
+
+Media Access Control
+
+#### LLC
+
+Logical Link Control
+
+### Physical Layer
+
+- Electrical layer of the model
+- Network cable, plugs, connectors, repeaters, receivers, tramission of light
+
+
 ## TCP
 
+TCP *(Transmission Control Protocol)* is one of the main protocols used in a TCP/IP network.
+It is used when the communication between two systems need to be reliable and guarantees data received receipts correctly and in order.
+TCP guarantees the delivery of the data. If data is not received, TCP will resend it.
+
+TCP is a *connection orineted protocol* meaning that it first acknowledges a session between the two computers. This is done using a 3-way handshake.
+
+### 3-Way Handshake
+
+- A computer will first send a message `SYN`.
+
+- The receiving computer will respond with a acknowledgement message `SYN_ACK`.
+
+- The senders computer sends a final message back to the receiver `ACK_RECEIVED`.
+
+Once this is complete, data can be delivered.
+
 ## UDP
+
+UDP *(User Datagram Protocol)* is a *connectionless oriented protocol* and does not guarantee data delivery: Fire and Forget protocol.
+
+Because of the less overhead of not guaranteeing data delivery, UDP is faster than TCP.
+
+**Uses**
+
+Voice and Video Traffic, Real Time Vide and Audio Streaming, QUIC transport protocol, OpenVPN error checking at application level
 
 ## DNS
 
 ## Load Balancing
 
-The mechanism by which we distribute requests (load) from clients on to the
-servers so as to not overload a few servers is known as *load balancing*.
+The mechanism by which we distribute requests (load) from clients on to the servers so as to not overload a few servers is known as *load balancing*.
 
-*How do we decide which request is served by which server?*
+**How do we decide which request is served by which server?**
 
 We will need a hash function `h(r)` which takes a request ID, hashes it and
 computes the modulo `M` to map this request to one of the servers (numbered
@@ -125,7 +203,7 @@ hashes as well modulo M.
 
 ## Consistent Hashing
 
-*How do we handle a request?*
+**How do we handle a request?**
 
 Whenever a request is received, 
 - compute the hash
@@ -136,23 +214,19 @@ This works because hashes are uniformly random so that the distance between them
 
 Expected Load Factor: `1/N`
 
-*What if we add a new server?*
+**What if we add a new server?**
 
-If we add a new server, then we can follow the above algorithm to figure out
-which requests will be processed by the new server. The change in request
-handing will be much less.
+If we add a new server, then we can follow the above algorithm to figure out which requests will be processed by the new server. The change in request handing will be much less.
 
-*What if a server goes down?*
+**What if a server goes down?**
 
 Then, all the requests will now have to be served by the next server.
-This is not balanced. The algo works well theoretically. It works pratically if
-you have loads of servers.
+This is not balanced. The algo works well theoretically.
+It works pratically if you have loads of servers.
 
-To solve this, we can create virtual servers by having *multiple hash
-functions*, say `K`, to compute multiple hashes of the servers. Now we, in some
-sense have, `N*K` servers. Choosing an appropriate `K` value `log(N)` can almost
-neglect the effect of removing a server because now the loads can be picked up
-by other servers as well and not shifting the entire burden onto one server.
+To solve this, we can create virtual servers by having *multiple hash functions*, say `K`, to compute multiple hashes of the servers.
+Now we, in some sense have, `N*K` servers.
+Choosing an appropriate `K` value `log(N)` can almost neglect the effect of removing a server because now the loads can be picked up by other servers as well and not shifting the entire burden onto one server.
 
 
 ## CAP Theorem
@@ -164,30 +238,27 @@ by other servers as well and not shifting the entire burden onto one server.
 **Partition Tolerance**: Ability of a system to operate if there is a network
 partition (for example, due to network failures)
 
-If a partition happens, the system must choose betwween *consistency* and
-*availbility*. If the system prioritises consistency, it may become unavailble
-until the partition is resolved. If the system prioritises availability, it may
-allow updates to the data resulting in data inconsistencies.
+If a partition happens, the system must choose between *consistency* and *availability*.
+If the system prioritises consistency, it may become unavailble until the partition is resolved.
+If the system prioritises availability, it may allow updates to the data resulting in data inconsistencies.
 
 **Consistency, Availbility & Partition Tolerance cannot be supported at the same
 time by a distributed system.**
 
-In real world, there is a degree of availbility and consistency which has to be
-kept in mind before designing a distributed system.
+In real world, there is a degree of availability and consistency which has to be kept in mind before designing a distributed system.
 
 ## Content Delivery Network
 
 A *CDN (Content Delivery Network)* brings content closer to the user as
 performance is critical to user engagement and retention. 
 
-To achieve this CDNs, deploy hundreds of servers all over the world. They are
-called PoP (Point of Presence) and the server inside them are called
-*Edge Server*. Each edge server acts as a reverse proxy with huge content cache.
+To achieve this CDNs, deploy hundreds of servers all over the world.
+They are called PoP (Point of Presence) and the server inside them are called *Edge Server*.
+Each edge server acts as a reverse proxy with huge content cache.
 
 If a piece of content is in the cache, it can be quickly returned the user.
 
-All TLS connections terminate at the edge server which significanyl decreases
-the latency for the user.
+All TLS connections terminate at the edge server which significanyl decreases the latency for the user.
 
 
 ## Distributed Systems

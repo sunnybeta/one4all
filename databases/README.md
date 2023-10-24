@@ -14,9 +14,7 @@ A *transaction* is collection of queries or one unit of work. Example: Account D
 
 ### Consistency
 
-*Consistency* states that a change must maintain integrity or should be
-cancelled completely in data and reads.
-Eventual consistency is what databases aim for in case of replicas.
+*Consistency* states that a change must maintain integrity or should be cancelled completely in data and reads. Eventual consistency is what databases aim for in case of replicas.
 
 ### Isolation
 
@@ -43,7 +41,28 @@ If we filter our records on some field, the database engine iterates over all th
 
 You may not need to iterate the entire index if you use *multilevel* indices.
 
+## Sharding
+
+Sharding is a method of horizontally partitiong a database into multiple database servers. Horizontal partitioing is the process of dividing a database based on a single key from the database fields.
+
+- Joining tends to be a problem if you have to join tables across different databases. 
+- One must take care of the shard being flexible.
+
+To make the shards more dynamic, we can further shard the already sharded database on some criteria into mini-shards. This is also known as heirarchcial sharding. There is a shard manager which will take care of which minishard should be handling a query. Once the sharding is complete, we can now add indicies on the mini-shard to speed up the queries.
+
+To deal with outages on a shard, we can consider implementing a leader / follower architecture where the write happens only on the master database while the reads are distributed among the follower databases. If the leader fails, the follower databases can choose one master among themselvers.
+
+**Pros**
+
+- Handle large reads and writes
+- Increase overall storage capacity
+- Higher availability
+
+**Cons**
+
+- Operationally complex
+- Cross Shard Queries
 
 ## B+ Trees
 
-## Sharding
+Coming Soon.
