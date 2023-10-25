@@ -73,7 +73,6 @@ Feel free to raise issues for improvements or corrections.
 * Chain of Responsibility
 * Strategy
 * Iterator
-* Builder
 * Bridge
 * Composite
 * Proxy
