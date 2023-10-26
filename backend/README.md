@@ -293,6 +293,25 @@ We can keep 100 message queues and index them from 0 to 99. Store the message in
 The message ID will remain the same. Client can have a store regarding the recceived message or the queue can keep a store of sent messages and avoid sending the message if the ID matches.
 
 
+## GraphQL
+
+*Graph Query Langauge* like REST sends HTTP requests to a server along with a schema for a response.
+It sits between the client and the backend service.
+GQL supports mutations and subscriptions.
+Mutation is a way to apply data modifications to resources and subscription is a way for clients to receive notifications on data modifications.
+
+### Pros
+
+- Allows client to query only for data / fields they need
+- Doesn't use URL to specify resources available in the API but uses a GraphQL schema
+
+### Cons
+
+- Difficult to cache as it has a single point of entry and uses HTTP POST by default
+- Needs special libraries and tooling on both client and server side
+
+**Personal opinion: You probably don't need GraphQL**
+
 ## PACLEC Theorem
 Coming Soon.
 
@@ -315,9 +334,6 @@ Coming Soon.
 Coming Soon.
 
 ## Server Side Events
-Coming Soon.
-
-## Kafka
 Coming Soon.
 
 ## Read / Write Ratio

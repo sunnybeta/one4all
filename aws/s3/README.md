@@ -1,4 +1,4 @@
-# S3
+# Simple Storage Service
 
 - Simple storage service focused on general object storage
 - Stores all kinds of files

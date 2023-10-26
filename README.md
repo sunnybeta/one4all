@@ -76,6 +76,7 @@ Feel free to raise issues for improvements or corrections.
 * SOLID Principle Code 
 * GraphQL
 * Spring Concepts & Notes
+* Redis & Mem Cache
 
 *Frontend*
 
@@ -104,7 +105,6 @@ Feel free to raise issues for improvements or corrections.
 * Simple Queue Service
 * Simple Notification Service
 * Event Bridge
-* Cloud Formation Template
 * AWS SDK
 * Lambda
 * CLI
