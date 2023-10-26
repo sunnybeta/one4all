@@ -99,14 +99,61 @@ let newFun2 = pname.bind2(o,1,2,3)
 newFun2('a','b','c')
 ```
 
+## Callbacks
 
-## Async Prograamming
+- A callback is a function passed as an argument to another function.
+- This technique allows a function to call another function.
+- A callback function can run after another function has finished
+- JavaScript functions are executed in the sequence they are called. Not in the sequence they are defined.
 
 ## Event Loop
 
+### Call Stack
+
+The *Call Stack* is a data structure which records where we are in the program.
+If we step into a function, we push it onto the stack.
+If we return from a function we return from the top of the stack.
+
+### Blocking
+
+There isn't any definition of what blocking is, Something is block just means that it is in some sense slow. Loops with large number of iterations, image processing, external URL requests are all examples of parts of programs which can be slow or in our case blocking.
+
+The main application will be stuck or blocked in case there is some piece of code which is blocking.
+
+### Task Queue
+
+```javascript
+console.log("Hello")
+
+setTimeout(function callback() {
+    console.log("Yes You");
+}, 5000
+);
+
+console.log("Me ?");
+```
+
+- The first `console.log` is pushed onto the stack.
+- `Hello` is logged.
+- This function is now complete and is now popped out of the stack.
+
+- `setTimeout` is pushed onto the stack
+- A timer is set by the WebAPI or C++ API
+- The function is popped off the stack.
+
+- Similar to the first line, the last `console.log` is pushed onto the stack, executed and popped off.
+
+*What happened to the callback of `setTimeout` ?*
+
+After `5000 ms`, the `callback` function is now pushed onto the **Task Queue**. Now the flow is easy.
+The *Event Loop*'s job is to look at the stack and the task queue.
+If the stack is empty, it will look at the first item in the queue and push it onto the call stack.
+The function in the stack is now executed and popped off.
+
+
 ## Closure Function
 
-A closure function is a function which has access to its parent scope even after the inner function has been closed.
+A *closure function* is a function which has access to its parent scope even after the inner function has been closed.
 Global variables can be made local / private with closures.
 
 ```javascript
@@ -173,14 +220,6 @@ add();
 // counter = 3
 // We are done!
 ```
-
-## Callbacks
-
-- A callback is a function passed as an argument to another function.
-- This technique allows a function to call another function.
-- A callback function can run after another function has finished
-- JavaScript functions are executed in the sequence they are called. Not in the sequence they are defined.
-
 
 ## Promises
 

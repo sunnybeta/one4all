@@ -45,9 +45,9 @@ Feel free to raise issues for improvements or corrections.
 * [Cloud Formation Template](aws/cft)
 * [S3](aws/s3)
 * [Simple Queue Service](aws/sqs)
-* AWS CLI
-* Simple Notification Service
-* Event Bridge
+* [Simple Notification Service](aws/sns)
+* [Event Bridge](aws/eventbridge)
+* [AWS CLI](aws/cli)
 
 **Continuous Integration & Continuous Deployment**
 
@@ -70,6 +70,19 @@ Feel free to raise issues for improvements or corrections.
 
 **TODO**
 
+*Fundamentals*
+
+* OSI Model
+* SOLID Principle Code 
+* GraphQL
+* Spring Concepts & Notes
+
+*Frontend*
+
+* React Hooks
+
+*Design Patterns*
+
 * Chain of Responsibility
 * Strategy
 * Iterator
@@ -85,6 +98,7 @@ Feel free to raise issues for improvements or corrections.
 * Template Method
 
 *AWS*
+
 * AWS Fundamentals 
 * S3
 * Simple Queue Service
@@ -93,11 +107,17 @@ Feel free to raise issues for improvements or corrections.
 * Cloud Formation Template
 * AWS SDK
 * Lambda
-
+* CLI
 
 *DSA*
 
-* Blind Leetcoded **3/75**
+* AVL Trees
+* Segment Trees
+* Red-Black Trees
+* AVL Tree Rotation
+* Heap
+* Minimum Spanning Tree
+* B+ Trees
 
 *System Design*
 

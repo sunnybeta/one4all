@@ -1,6 +1,7 @@
 # Boyre-Moore Majority Voting Algorithm
 
-This is one of the popular optimal algorithms which is used for finding the majority element among the given elements that have more than N/ 2 occurrences. This works perfectly fine for finding the majority element which takes 2 traversals over the given elements, which works in **O(N)** time complexity and **O(1)** space complexity.
+This is used for finding the majority element among the given elements that have more than N/ 2 occurrences.
+It works by traversing over the given elements twice and works in `O(N)` time complexity and `O(1)` space complexity.
 
 
 ## Idea 

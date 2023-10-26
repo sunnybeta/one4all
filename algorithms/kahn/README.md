@@ -1,6 +1,6 @@
 # Kahn's Algorithm
 
-This algorithm is used for topoligoically sorting the nodes of a directed acyclic graph.
+This algorithm is used for topologically sorting the nodes of a directed acyclic graph.
 
 ```python
 from collections import deque, defaultdict
