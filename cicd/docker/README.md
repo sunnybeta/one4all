@@ -1,5 +1,11 @@
 # Docker
 
+## Open Container Initiative 
+
+OCI standardizes container runtime, image and distribution specifications. This ensure that the container ecosystem remains open and not tied to a single vendor.
+
+## What is Docker ?
+
 - Docker is a standardized unit of software used to deploy applications. Containers package up all the code and dependencies for an app so it can be used on any server.
 - Docker only virtualizes the application layer and uses the kernel of the host.
 - Containers work in isolation and can perform tasks independent of other containers.
@@ -37,6 +43,21 @@
 - Developer and Operations work together to package the aplication in a container
 - Avoid configuring anything on the server
 
+## Components
+
+Docker has three key components:
+
+### Docker Client
+
+This is the primary interface for interacting with docker. It communicates with the docker daemon for managing varuoys docker objects including images and containers.
+
+### Docker Daemon
+
+This is the core engine which manages container operations. It resides on a system running the docker software commonly known as the docker host. It can utilise OCI compliant runtimes like containerd for running containers.
+
+### Docker Registeries
+
+These contain and store container images. The most popular is Docker Hub.
 
 ## Favourite Commands
 
@@ -62,7 +83,9 @@ docker container rm CONTAINER_HASH
 
 ### Build
 
-Build an image with the docker file `Dockerfile` in the same directory.
+*Build an image with the docker file `Dockerfile` in the same directory.*
+
+Create an image which adheres to the OCI standard making it compatible across different runtimes.
 
 ```console
 docker build -t IMAGE_NAME:IMAGE_VERSION .
@@ -70,7 +93,10 @@ docker build -t IMAGE_NAME:IMAGE_VERSION .
 
 ### Run
 
-Run the docker image attached to `localhost:localport`.
+*Run the docker image attached to `localhost:localport`.*
+
+This starts a container from an image managed by the daemon.
+Here containerd can serve as underlying runtimes.
 
 ```console
 docker run -d -p localport:dockerport --name CONTAINER_NAME IMAGE_NAME 

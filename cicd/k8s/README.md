@@ -43,8 +43,7 @@
 #### Kube Proxy
 
 * Responsible for forwarding requests from services to pods
-* It has intelligent forwarding logic inside which makes sure communication works in a performant way like sending the requests to a pod replica runnng in the same node and not any other node avoiding the network overhead.
-
+* Consists of intelligent forwarding logic inside which makes sure communication works in a performant way like sending the requests to a pod replica runnng in the same node and not any other node avoiding the network overhead.
 
 ### Master Node
 
@@ -53,7 +52,6 @@
 * Each work node has docker containers of different applications deployed on it. The actual work happens here.
 * Worker nodes are much bigger and have more resources while Master node runs a handful of resources.
 * Having of a backup of the master is a must. Keeping at least two master nodes is a must.
-
 
 #### API Server
 
@@ -74,9 +72,10 @@
 
 #### ETCD
 
-* The etcd is a key value storage stores the entire configuration of the kubernetes cluster. We can restore the entire cluster state using the etcd snapshot. 
+* The etcd is a distributed key value storage stores the entire configuration of the kubernetes cluster. We can restore the entire cluster state using the etcd snapshot. 
 
 #### Virtual Network 
+
 * Turns all the nodes inside the cluster into one powerful machine that has sum of all the resources of the individual nodes.
 
 ### Pods
@@ -85,7 +84,7 @@
 * Each worker node has multiple pods and each pod can run multiple container.
 * Usually one has one pod per application
 * The virtual network assigns each pod an IP address which is utilised by the pods to talk to each other.
-* If a contaier dies inside a pod, it is automatically restarted.
+* If a container dies inside a pod, it is automatically restarted.
 
 ### Service
 
@@ -97,7 +96,6 @@
 #### Internal vs External Service
 
 * External service is a service which opens the communication form external sources such as web browsers.
-
 * We use an internal service which does not open our database to the outside world.
 
 ### Ingress
@@ -130,7 +128,6 @@
 * Database cannot be replicated using deployment becuase databases have a state which needs to be managed.
 * StatefulSet is a component of Kubernetes which takes care of replicating pods making sure the operations are synchronized.
 * It is sometimes preferable to have databases hosted outside the Kubernetes cluster.
-
 
 ## Configuration YAML
 
@@ -191,5 +188,5 @@ spec:
 
 ### Kubectl
 
-Kubectl is a Command-line tool for k8 cluster which allows you to talk to the cluster's API server.
+- Kubectl is a Command-line tool for k8 cluster which allows you to talk to the cluster's API server.
 
