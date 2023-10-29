@@ -73,7 +73,7 @@ public class Area {
 When a method in the childfrom the parent class with the same name and signature is inherited and modified in the child class, this is known as *function overriding*.
 
 ```java
-class Inheritance {
+class Overriding {
 	public static void main(String[] args) {
 		Person p = new Person("Sunny", "Beta");
 		Employee e = new Employee("Cloudy", "Alpha", 10_00_000f);
@@ -120,19 +120,99 @@ class Employee extends Person {
 
 
 ```java
-abstract class Compute{ 
-  abstract void add(); 
-  abstract void multiply(); 
-  abstract void divide(); 
-  abstract void modulo(); 
-} 
-```
+class Abstraction {
+	public static void main(String[] args) {
+		Tech tech = new Tech();
+		tech.add(1,2);
+		tech.multiply(37,39);
+		System.out.println(tech.divide(666664,166666));
+		tech.modulo(1829,18);
+		System.out.println(tech.power(6,6));
+	}
+}
 
-- Any class which now impleemnts the `Compute` class must implement the `add`, `multiply`, `divide` and `modulo` functions.
+public abstract class Compute {
+	abstract void add(int a,int b);
+	abstract void multiply(int a, int b);
+	abstract float divide(int a,int b);
+	abstract void modulo(int a,int b);
+	abstract double power(int a, int b);
+}
+
+public class Tech extends Compute {
+
+	public Tech() {}
+
+	void add(int a, int b) {
+		System.out.println(a + b);
+	}
+
+	void multiply(int a, int b) {
+		System.out.println(a * b);
+	}
+
+	float divide(int a, int b) {
+		return a / (float)b;
+	}
+
+	void modulo(int a, int b) {
+		while (a > 0) {
+			a -= b;
+		}
+		a += b;
+		System.out.println(a);
+	}
+
+	@Override
+	double power(int a, int b) {
+		double ans = 1;
+		while (b-- > 0) {
+			ans *= a;
+		}
+		return ans;
+	}
+}
+```
 
 
 ## Encapsulation
 
 - Encapsulation ensures that *sensitive* data is hidden from users.
-- Declare class variables/attributes as private
+- Declare class variables/attributes as private or protected.
 - Provide public get and set methods to access and update the value of a private variable
+
+
+```java
+public class Encapsulation {
+	public static void main(String[] args) {
+		Circle c = new Circle(10);
+		System.out.println("Circle's Old Radius = " + c.getRadius());
+		c.setRadius(11);
+		System.out.println("Circle's New Radius = " + c.getRadius());
+	}
+}
+
+class Circle {
+	private int radius;
+
+	public Circle() {
+		radius = 1;
+	};
+
+	public Circle(int radius) {
+		this.radius = radius;
+	};
+
+	public double Area() {
+		return 22.0/7 * radius * radius;
+	}
+
+	public int getRadius() {
+		return radius;
+	}
+
+	public void setRadius(int r) {
+		radius = r;
+	}
+}
+```

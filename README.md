@@ -11,7 +11,6 @@ Feel free to raise issues for improvements or corrections.
 * [Object-Oriented Programming System](oops)
 * [SOLID Principles](solid)
 * [Design Patterns](designpatterns)
-* [Blind 75 Leetcode](blind75)
 * [Data Structures](datastructures)
 * [Algorithms](algorithms)
 * [System Design](systemdesign)
@@ -54,7 +53,7 @@ Feel free to raise issues for improvements or corrections.
 * [Docker](cicd/docker)
 * [Kubenetes](cicd/k8s)
 * GitHub Actions
-* [Jenkins](cicd/jenkins)
+* Jenkins
 * Prometheus
 
 **Languages**
@@ -73,8 +72,6 @@ Feel free to raise issues for improvements or corrections.
 *Fundamentals*
 
 * OSI Model
-* SOLID Principle Code 
-* GraphQL
 * Spring Concepts & Notes
 * Redis & Mem Cache
 

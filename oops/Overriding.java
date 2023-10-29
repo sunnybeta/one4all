@@ -1,4 +1,4 @@
-class Inheritance {
+class Overriding {
 	public static void main(String[] args) {
 		Person p = new Person("Sunny", "Beta");
 		Employee e = new Employee("Cloudy", "Alpha", 10_00_000f);
