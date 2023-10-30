@@ -2,15 +2,12 @@
 
 ### Problem
 
-We want objects of our class to be copied perfectly (including private
-variables) into new objects of the same class. Writing a function which does
-this is one solution, but we wouldn't want to write it for every similar class.
+We want objects of our class to be copied perfectly (including private variables) into new objects of the same class.
+Writing a function which does this is one solution, but we wouldn't want to write it for every similar class.
 
 ### Solution
 
-1. **Abstract Parent Class** Write an abstract parent class which can be
-extended into the class which requies the cloning functionality with a `clone`
-method and two constructors: empty, same object parameter
+1. **Abstract Parent Class** Write an abstract parent class which can be extended into the class which requies the cloning functionality with a `clone` method and two constructors: empty, same object parameter
 
 2. **Clone Functions** Implement the `clone` method in the child class.
 

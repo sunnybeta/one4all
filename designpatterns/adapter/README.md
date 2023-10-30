@@ -2,29 +2,23 @@
 
 ### Problem
 
-We have code which does not behave in a certain manner, is incomptible, or some
-legacy code with a different API. We would like this class / API to work in a
-certain way, implement particular functions and become compatible with the
-current practices.
+We have code which does not behave in a certain manner, is incomptible, or some legacy code with a different API.
+We would like this class / API to work in a certain way, implement particular functions and become compatible with the current practices.
 
 ### Solution
 
-1. **Abstract the expected behaviour** Make sure that the current or required
-impementation is inherited from a parent abstract class or interface.
+1. **Abstract the expected behaviour** Make sure that the current or required impementation is inherited from a parent abstract class or interface.
 
-2. **Write an Adapter Class** Write a new class `ObjectAdapter` which take the unwwanted
-implementation as argument and then implement the new interface.
+2. **Write an Adapter Class** Write a new class `ObjectAdapter` which take the unwwanted implementation as argument and then implement the new interface.
 
-3. **Update Code** Whenever you receive an object from the ill-behaved class,
-pass it through the adapter to make it well-behaved.
+3. **Update Code** Whenever you receive an object from the ill-behaved class, pass it through the adapter to make it well-behaved.
 
 ```java
 import java.util.ArrayList;
 import java.util.List;
 
-public class AdapterDesignPatter {
+public class Adapter {
 	public static void main(String[] args) {
-		System.out.println("Adapter Design Pattern");
 		/* Test Data */
 		List<Student> students = new ArrayList<>();
 		CollegeStudent collegeStudent = new CollegeStudent("Doma", 123);
@@ -89,7 +83,7 @@ class SchoolStudent  {
 }
 
 
-/* We can write an *adapter class* which implements the `Student` class through the incompatible `SchoolStudent` class */
+/* We can write an *adapter class* which implemnts the `Student` class through the incompatible `SchoolStudent` class */
 class SchoolStudentAdapter implements Student {
 	private SchoolStudent schoolStudent;
 

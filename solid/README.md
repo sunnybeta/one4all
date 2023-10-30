@@ -9,7 +9,7 @@
 Consider the below example.
 
 ```java
-public class SRP {
+public class NonSRP {
 	public static void main(String[] args) {
 		Employee e = new Employee("Sunny", 21);
 		e.save();
@@ -26,9 +26,7 @@ public class Employee {
 	}
 
 	private int getRegularHours() {
-		/* A change here breaks calculateSalary
-         * Another actor should not be changing this value
-         */
+		// A change here breaks calculateSalary
 		return 8;
 	}
 
@@ -99,7 +97,6 @@ public class Actor1 extends EmployeeBase {
 	}
 }
 
-
 public class Actor2 extends EmployeeBase {
 	public Actor2(String name, int age) {
 		super(name, age);
@@ -117,10 +114,7 @@ public class Actor2 extends EmployeeBase {
 		return calculateHours() * 105f;
 	}
 }
-
 ```
-
-
 
 ## Open-Closed Principle
 
@@ -138,13 +132,11 @@ public class OpenClosed {
 	}
 }
 
-
 public abstract class Shape {
 	abstract double getArea();
 	abstract void displayArea();
 
 }
-
 
 public class Circle extends Shape{
 	private double radius;
@@ -162,9 +154,7 @@ public class Circle extends Shape{
 	void displayArea() {
 		System.out.println(String.format("The area of the circle of radius %.2f is %.2f", radius, getArea()));
 	}
-
 }
-
 
 public class Rectangle extends Shape{
 	private double width;
@@ -185,7 +175,6 @@ public class Rectangle extends Shape{
 		System.out.println(String.format("The area of the rectangle of height %.2f and width %.2f is %.2f", height, width, getArea()));
 	}
 }
-
 ```
 
 
@@ -307,27 +296,21 @@ public interface DBStoreInterface {
 	public void fetch();
 }
 
-public interface CacheStoreIntefrace {
+public interface CacheStoreInterface {
 	public void addKey();
 	public void deleteKey();
 	public void updateKey();
 }
 
 public class DBStore implements DBStoreInterface {
-	@Override
 	public void save() {}
-	@Override
 	public void delete() {}
-	@Override
 	public void fetch() {}
 }
 
 public class CacheStore implements CacheStoreInterface {
-	@Override
 	public void addKey() {};
-	@Override
 	public void deleteKey() {};
-	@Override
 	public void updateKey() {};
 }
 ```
@@ -335,8 +318,8 @@ public class CacheStore implements CacheStoreInterface {
 
 ## Dependency Inversion Principle
 
-- _Dependency Inversion, Injection, Inversion Control are all diffent._
-- _Principle of Dependency Inversion and  Application of Dependency Inversion also mean different things._
+- *Dependency Inversion, Injection, Inversion Control are all diffent.*
+- *Principle of Dependency Inversion and  Application of Dependency Inversion also mean different things.*
  
 - High level modules should not depend on low level modules. Both should depend on abstractions.
 - Abstraction should not depend on implementation. Implementation should depend on abstraction.
@@ -356,7 +339,6 @@ public class DependencyInversion {
 	}
 }
 
-
 public class User {
 	private String name;
 
@@ -374,11 +356,9 @@ public class User {
 	}
 }
 
-
 public interface Store {
 	public void save(String name);
 }
-
 
 public class FancyStore implements Store {
 	public FancyStore() {}

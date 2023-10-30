@@ -2,10 +2,10 @@
 
 Source: [Be A Better Dev](https://www.youtube.com/watch?v=0Sh9OySCyb4)
 
-A *Cloud Formation Template* is an IaC provider where the user can declarae the AWS resources that make up a stack.
+A *Cloud Formation Template* is an IaC provider where the user can declare the AWS resources that make up a stack.
 
-- We can write a YAML file and upload it to AWS which will create the stack for us without manual work.
-- If something goes wrong, then we can easily rollback.
+- We can write a YAML file and upload it to AWS which will create the stack for us without manual work
+- If something goes wrong, then we can easily rollback
 - Great for regional expansion
 - Allows code review mechanism for infrastructural change
 - Can be integrated with CI pipeline
@@ -20,7 +20,6 @@ A *Cloud Formation Template* is an IaC provider where the user can declarae the 
 - Shows a preview of what cloud formation template will do next in incremental steps
 
 ## Example: Dynamo DB
-
 
 ```yaml
 AWSTemplateFormatVersion: 2010-09-09
@@ -75,4 +74,3 @@ Resources:
             Path: "/"
 
 ```
-

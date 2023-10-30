@@ -10,7 +10,7 @@ There are three types of rendering that takes place:
 
 * Server-Side Rendering
 * Static Site Generation
-* Client-Side Rednering
+* Client-Side Rendering
 
 ### Server-Side Rendering & Static Site Generation
 
@@ -26,7 +26,7 @@ Not all code can be run on a server. Example, objects that call `window`, `local
 
 ### Pre-Rendering vs Client-Side Rendering
 
-For standard pre-redenring style applications, the client receives some JS along with instruction on how to render the componenets on the UI and is called client-side rendering.
+For standard pre-rendering style applications, the client receives some JS along with instruction on how to render the componenets on the UI and is called client-side rendering.
 
 In pre-rendering, the client sees the page only when the entire code has been converted to HTML correctly. The user will see a blank page until the rendering is done.
 

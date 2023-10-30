@@ -71,8 +71,8 @@ Feel free to raise issues for improvements or corrections.
 
 *Fundamentals*
 
-* OSI Model
 * Spring Concepts & Notes
+* OSI Model
 * Redis & Mem Cache
 
 *Frontend*
