@@ -1,5 +1,64 @@
 # Javascrip Fundamentals
 
+## Execution Context
+
+Everything in Javascript happens inside an **Execution Context**.
+The execution context has two components:
+- **Memory Component**: All variables and functions are stored here as key value pairs. This is also knowns as *variable environment*.
+- **Coded Component**: Here the code is executed one line at a time. This is also known as *Thread of Execution*
+
+Everytime a function is invoked, a new execution context is created.
+This execution is immediately deleted after its job is complete.
+**Javascript is a synchronous single-threaded language.**
+
+## Call Stack
+
+The call stack maintains the order of execution of the execution context.
+
+Whenever a code is executed, a global execution context is pushed onto the stack. When a new function is invoked, it is pushed onto the stack. After the completion of a function, the execution context is then popped off the stack.
+
+## Hoisting
+
+Hoisting is a phenomenon in javascript by which we can access variable and functions without initializing it without an error.
+
+Note: Arrow functions behave like variables. So it cannot be accessed before reaching the initialization.
+
+## Hello World
+
+```javascript
+console.log("Hello, World!\n");
+```
+
+Whenever we run a javascript program: three global variables are created: a global object, a variable `this` which equals this global object.
+
+## Scope
+
+Scope of a variable is the parts of the code where the variable can be accessed.
+When searching for a variable for reference, javascript looks for the variable in the lexical environment.
+
+*Lexical environment is simply the current local environment and the parent environment*
+
+By definition, we now also check for the variables in the parent lexical environment.
+This creates a chain of scopes and is known as the *scope chain*.
+
+## Temporal Dead Zone
+
+The time between hoisting and initialization fo a variable is called its temporal dead zone.
+
+To avoid temporal deadzone, tryi keeping all declarations and initilaizations on the top of your code (function).
+
+### Let
+
+The creation of a variable with `let` keyword provides some sainty in javascript. It is stricter than `var` in te following ways.
+
+If a variable is created with the `let` keyword, accessing the hoister variable will throw a `Reference Error`.
+Reinitialising the variable, will throw a `Syntax Error`.
+
+### Const
+
+Variable declared with `const` must be initalized as well. Finally, we cannot update a `const` variable.
+
+
 ## Protoype
 
 Every object and function has its own property called *prototype*.
