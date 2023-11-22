@@ -1,4 +1,4 @@
-class Abstraction {
+public class Abstraction {
 	public static void main(String[] args) {
 		Tech tech = new Tech();
 		tech.add(1,2);

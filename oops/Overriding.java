@@ -1,4 +1,4 @@
-class Overriding {
+public class Overriding {
 	public static void main(String[] args) {
 		Person p = new Person("Sunny", "Beta");
 		Employee e = new Employee("Cloudy", "Alpha", 10_00_000f);
@@ -8,7 +8,7 @@ class Overriding {
 }
 
 
-class Person {
+public class Person {
 	public String fname;
 	public String lname;
 
@@ -23,7 +23,7 @@ class Person {
 }
 
 
-class Employee extends Person {
+public class Employee extends Person {
 	float salary;
 
 	public Employee(String firstName, String lastName, Float salaryAmount) {

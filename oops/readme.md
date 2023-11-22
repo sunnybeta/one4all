@@ -1,5 +1,10 @@
 # Object-Oriented Programming System
 
+*Source*
+
+https://www.youtube.com/@sudocode
+
+https://www.geeksforgeeks.org
 
 ## Inheritance
 
@@ -44,14 +49,14 @@ class Employee extends Person {
 ## Polymorphism
 
 - Polymorphism is the ability of to take on different forms or behave in different ways depending on the context in which they are used.
-- Languages use operator overloading and overriding to implement polymorphism concepts
+- Programming Languages use operator overloading and overriding to implement polymorphism concepts.
 
 
 ### Overloading
 
-- When methods with the same name is declared with different signatures, this is known as *function overloading*.
+When methods with the same name is declared with different signatures, this is known as *function overloading*.
 
-``` java
+```java
 public class Area {
     public static void main(String[] args) {
         name("Sunny", "Beta");
@@ -70,7 +75,7 @@ public class Area {
 
 ### Overriding
 
-When a method in the childfrom the parent class with the same name and signature is inherited and modified in the child class, this is known as *function overriding*.
+When a method in the subclass with the same name and signature as its method from the superclass is inherited and modified in the child class, this is known as *function overriding*.
 
 ```java
 class Overriding {
@@ -116,7 +121,7 @@ class Employee extends Person {
 
 - Process of identifying the required characteristics and ignore the rest.
 - Property by virtue of which only essential details are displayed.
-- Languages uses `abstract classes` and `interfaces` to implement the concept of encapsulation.
+- Languages uses `abstract` classes and `interface`s to implement the concept of encapsulation.
 
 
 ```java
@@ -178,8 +183,8 @@ public class Tech extends Compute {
 ## Encapsulation
 
 - Encapsulation ensures that *sensitive* data is hidden from users.
-- Declare class variables/attributes as private or protected.
-- Provide public get and set methods to access and update the value of a private variable
+- Declare class variables/attributes and methods as `private` or `protected`
+- Provide public *getter* and *setter* methods to access and update the value of a private variable
 
 
 ```java

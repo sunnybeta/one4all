@@ -7,7 +7,7 @@ public class Encapsulation {
 	}
 }
 
-class Circle {
+public class Circle {
 	private int radius;
 
 	public Circle() {

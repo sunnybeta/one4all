@@ -1,4 +1,4 @@
-class Inheritance {
+public class Inheritance {
 	public static void main(String[] args) {
 		Person p = new Person("Sunny", "Beta");
 		p.fullname();
@@ -7,7 +7,7 @@ class Inheritance {
 	}
 }
 
-class Person {
+public class Person {
 	public String fname;
 	public String lname;
 
@@ -21,7 +21,7 @@ class Person {
 	}
 }
 
-class Employee extends Person {
+public class Employee extends Person {
 	float salary;
 
 	public Employee(String firstName, String lastName, Float salaryAmount) {
