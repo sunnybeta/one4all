@@ -1,18 +1,20 @@
 # Git
 
-*The following is a list of my favourite commands.*
+<img src='https://git-scm.com/images/logos/downloads/Git-Icon-1788C.svg'>
 
 ## Commands
 
+*The following is a list of my favourite commands.*
+
 ### Initialization
 
-Initializes the current directory with a .git folder.
+Initializes the current directory with a `.git` folder:
 
 ```bash
 git init .
 ```
 
-Add the files for tracking.
+Add files for tracking:
 
 ```bash
 git add .
@@ -45,6 +47,12 @@ Remove the remote URL
 
 ```bash
 git remote remove origin
+```
+
+View the remote URL
+
+```bash
+git remote -v
 ```
 
 ### Status
@@ -87,7 +95,7 @@ git reset HEAD~
 
 ### Prune
 
-Gets rid of deleted branches from remote repository in local.
+Gets rid of deleted branches from remote repository in local:
 
 ```bash
 git fetch --prune
@@ -95,7 +103,7 @@ git fetch --prune
 
 ### Set Upstream
 
-Push the current code in `branch` and create it remotely.
+Push the current code in *<branch>* and create it remotely:
 
 ```bash
 git push -u origin <branch>

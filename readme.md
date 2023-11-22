@@ -1,150 +1,172 @@
-# Software Engineering Fundamentals
+# One4All: Software Engineering
 
-This repository consists of my notes on various programming tools and topics.
+This repository consists of my notes on programming fundamentals and few core technologies.
 
-Feel free to raise issues for improvements.
+<img src='public/allmight.png' width=360>
 
-Any issues for corrections will also be appreciated.
+## Contents
 
+### Core
 
+[Object-Oriented Programming System](oops)
 
-### Contents
+[SOLID Principles](solid)
 
-**Core**
+[Design Patterns](designpatterns)
 
-* [Object-Oriented Programming System](oops)
-* [SOLID Principles](solid)
-* [Design Patterns](designpatterns)
-* [Data Structures](datastructures)
-* [Algorithms](algorithms)
-* [System Design](systemdesign)
+[Data Structures](datastructures)
 
-**Database**
+[Algorithms](algorithms)
 
-* [Database Theory](databases)
-* PostgreSQL
-* MongoDB
+[System Design](systemdesign)
 
-**Back End**
+[Database Theory](databases)
 
-* [Back End](backend)
-* [FastAPI](backend/fastapi)
-* [Spring Boot](backend/springboot)
-* [Gin](backed/gin)
+[Front End](frontend)
 
-**Microservices**
+[Back End](backend)
 
-* [Microservices](microservices)
+[Microservices](microservices)
 
-**Front End**
+[System Design](systemdesign)
 
-* [Front End](frontend)
-* [VueJS](frontend/vue)
-* [NextJS](frontend/next)
+### Technologies
+
+**LANGUAGES**
+
+[C](https://github.com/sunnybeta/letmec)
+
+[Python](lang/python)
+
+[Java](lang/java)
+
+[Javascript](lang/javascript)
+
+[Go](lang/go)
+
+[Rust](lang/rust)
+
+[Haskell](lang/haskell)
+
+**DATABASES**
+
+[PostgreSQL](databases/postgres)
+
+[MongoDB](databases/mongo)
+
+**BACK END**
+
+[FastAPI](backend/fastapi)
+
+[Spring](backend/spring)
+
+[Gin](backed/gin)
+
+**FRONT END**
+
+[VueJS](frontend/vue)
+
+[NextJS](frontend/next)
 
 **AWS**
 
-* [IAM](aws/iam)
-* [Cloud Formation Template](aws/cft)
-* [S3](aws/s3)
-* [Simple Queue Service](aws/sqs)
-* [Simple Notification Service](aws/sns)
-* [Event Bridge](aws/eventbridge)
-* [AWS CLI](aws/cli)
+[IAM](aws/iam)
 
-**Continuous Integration & Continuous Deployment**
+[Cloud Formation Template](aws/cft)
 
-* [Docker](cicd/docker)
-* [Kubenetes](cicd/k8s)
-* GitHub Actions
-* Jenkins
-* Prometheus
+[S3](aws/s3)
 
-**Languages**
+[Simple Queue Service](aws/sqs)
 
-* [C](https://github.com/EternalParadiseFaith/letmec)
-* [Python](lang/python)
-* [Java](lang/java)
-* [Javascript](lang/javascript)
-* [Go](lang/go)
+[Simple Notification Service](aws/sns)
 
-**System Design**
-* [Proximity Service](systemdesign/proximity)
+[Event Bridge](aws/eventbridge)
 
-**TODO**
+[AWS CLI](aws/cli)
 
-*Fundamentals*
+**CI/CD**
 
-* Spring Concepts & Notes
-* OSI Model
-* Redis & Mem Cache
+[Docker](cicd/docker)
 
-*Frontend*
+[Kubenetes](cicd/k8s)
 
-* React Hooks
+[Jenkins](cicd/jenkins)
 
-*Design Patterns*
+[GitHub Actions](cicd/githubactions)
 
-* Chain of Responsibility
-* Strategy
-* Iterator
-* Bridge
-* Composite
-* Proxy
-* Decorator
-* Command
-* Mediator
-* Memento
-* State
-* Visitor
-* Template Method
+[Prometheus](cicd/prometheus)
 
-*AWS*
+[ArgoCD](cicd/argo)
 
-* AWS Fundamentals 
-* S3
-* Simple Queue Service
-* Simple Notification Service
-* Event Bridge
-* AWS SDK
-* Lambda
-* CLI
+## ToDo
 
-*DSA*
+- [ ] Spring Concepts & Notes
+- [ ] OSI Model
+- [ ] Redis & Mem Cache
+- [ ] React Hooks
 
-* AVL Trees
-* Segment Trees
-* Red-Black Trees
-* AVL Tree Rotation
-* Heap
-* Minimum Spanning Tree
-* B+ Trees
+---
 
-*System Design*
+- [ ] Chain of Responsibility
+- [ ] Strategy
+- [ ] Iterator
+- [ ] Bridge
+- [ ] Composite
+- [ ] Proxy
+- [ ] Decorator
+- [ ] Command
+- [ ] Mediator
+- [ ] Memento
+- [ ] State
+- [ ] Visitor
+- [ ] Template Method
 
-* airbnb_search
-* amazon
-* bank
-* calculator
-* dropbox
-* ecommerce
-* google_maps
-* instagram
-* irctc
-* leetcode
-* netflix
-* notification
-* parking_lot
-* rate_limiter
-* reddit
-* search_engine
-* spotify
-* tiktok
-* twitter
-* uber
-* upi
-* url_shortner
-* webcrawler
-* whatsapp
-* youtube
-* zomato
+---
+
+- [ ] AWS Fundamentals 
+- [ ] S3
+- [ ] Simple Queue Service
+- [ ] Simple Notification Service
+- [ ] Event Bridge
+- [ ] AWS SDK
+- [ ] Lambda
+- [ ] CLI
+
+---
+
+- [ ] AVL Trees
+- [ ] Segment Trees
+- [ ] Red-Black Trees
+- [ ] AVL Tree Rotation
+- [ ] Heap
+- [ ] Minimum Spanning Tree
+- [ ] B+ Trees
+
+---
+
+- [ ] airbnb_search
+- [ ] amazon
+- [ ] bank
+- [ ] calculator
+- [ ] dropbox
+- [ ] ecommerce
+- [ ] google_maps
+- [ ] instagram
+- [ ] irctc
+- [ ] leetcode
+- [ ] netflix
+- [ ] notification
+- [ ] parking_lot
+- [ ] rate_limiter
+- [ ] reddit
+- [ ] search_engine
+- [ ] spotify
+- [ ] tiktok
+- [ ] twitter
+- [ ] uber
+- [ ] upi
+- [ ] url_shortner
+- [ ] webcrawler
+- [ ] whatsapp
+- [ ] youtube
+- [ ] zomato
