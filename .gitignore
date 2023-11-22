@@ -1,0 +1,17 @@
+# Binary
+bin/
+bst
+
+# Node
+node_modules/
+package-lock.json
+
+# Go Gin
+server
+
+# Java
+*.class
+
+# Python
+.venv
+__pycache__/

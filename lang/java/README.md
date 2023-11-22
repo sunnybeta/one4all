@@ -240,6 +240,8 @@ Stream API is a way to process collection of objects enabling us to perform oper
 Map method is used to return a stream consisting of the results of applying the given functions to the elements of this stream.
 
 ```java
+import java.util.stream.Collectors;
+
 List nums = Arrays.asList(2,3,4,5);
 List double = nums.stream().map(x -> x*2).collect(Collectors.toList());
 ```

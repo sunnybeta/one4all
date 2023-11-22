@@ -1,5 +1,5 @@
 /* Main */
-class Proto {
+public class Proto {
 	public static void main(String[] args) {
 		System.out.println("Prototype Design Pattern");
 		ChildItem pi1 = new ChildItem();
@@ -14,7 +14,7 @@ class Proto {
 }
 
 /* Abstract Parent Class */
-abstract class ParentItem {
+public abstract class ParentItem {
 	public float height;
 	public String name;
 
@@ -32,11 +32,10 @@ abstract class ParentItem {
 }
 
 /* Child class extends Parent class */
-class ChildItem extends ParentItem {
+public class ChildItem extends ParentItem {
 	public int weight;
 
-	public ChildItem() {
-	}
+	public ChildItem() {}
 
 	public ChildItem(ChildItem target) {
 		super(target);

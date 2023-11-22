@@ -1,9 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class AdapterDesignPattern {
+public class Adapter {
 	public static void main(String[] args) {
-		System.out.println("Adapter Design Pattern");
 		/* Test Data */
 		List<Student> students = new ArrayList<>();
 		CollegeStudent collegeStudent = new CollegeStudent("Doma", 123);
