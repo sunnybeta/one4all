@@ -280,9 +280,24 @@ add();
 // We are done!
 ```
 
+## Callback Hell
+
+Suppose we have an two API call which must take place one after the other.
+To ensure that happens, we pass the second api within the first as JS runs all at the same time.
+
+```javascript
+const let args = 10;
+api1.run(args, function() {
+    api2.run()
+})
+```
+
+We will quickly run into problems as the number of dependent functions increases.
+
+
 ## Promises
 
-A promise object in Java consists of both a `producing` code and calls to the `consuming` code.
+A promise object in Java consists of both a `producing` code and calls to the `consuming` code and represents the eventual completion or failure of an asynchronous operation.
 
 ```javascript
 let myPromise = new Promise((resolve,reject) => {
@@ -295,17 +310,43 @@ myPromise.then(
 );
 ```
 
+The Promise object supports two properties: `state` and `result`.
+
 A Promise object can be:
 
 - Pending
 - Fulfilled
 - Rejected
 
-The Promise object supports two properties: `state` and `result`.
-
 While a Promise object is _pending_ (working), the result is undefined.
 When a Promise object is _fulfilled_, the result is a value.
 When a Promise object is _rejected_, the result is an error object.
+
+```javascript
+function api1(data) {
+	const promise = new Promise((resolve, reject) => {
+		console.log("message: 'Calling API1'");
+		if (data == 1) {
+			resolve(100);
+		}
+		else {
+			const err = new Error("Rejected");
+			reject(err);
+		}
+	})
+	return promise;
+}
+
+function api2() {
+	console.log("message: 'Calling API2'");
+}
+
+function api3() {
+	console.log("message: 'Calling API3'");
+}
+
+api1(1).then(() => api2()).catch((err) => api3())
+```
 
 
 ## == vs ===

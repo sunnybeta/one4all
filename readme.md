@@ -2,7 +2,11 @@
 
 This repository consists of my notes on various programming tools and topics.
 
-Feel free to raise issues for improvements or corrections.
+Feel free to raise issues for improvements.
+
+Any issues for corrections will also be appreciated.
+
+
 
 ### Contents
 
