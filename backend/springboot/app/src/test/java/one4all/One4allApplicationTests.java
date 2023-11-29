@@ -1,10 +1,10 @@
-package io.eternalparadise.contentcalendar;
+package one4all;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ContentCalendarApplicationTests {
+class One4allApplicationTests {
 
 	@Test
 	void contextLoads() {

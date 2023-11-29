@@ -1,11 +1,13 @@
-package io.eternalparadise.contentcalendar;
+package one4all;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Application {
+public class One4allApplication {
+
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(One4allApplication.class, args);
 	}
+
 }

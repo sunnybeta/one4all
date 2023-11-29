@@ -1,17 +1,30 @@
 # Spring Boot
 
+*SOURCE*
+
+![Dan Vega](https://www.youtube.com/@DanVega)
+![GeeksForGeeks](https://geeksforgeeks.com/)
+
 ## Getting Started
 
-### Spring Initializer
+Run the following commands to start the server:
 
-Download the required files for starting a spring project on [Spring Initializer](https://start.spring.io/).
+```bash
+cd app
+./mvnw spring-boot:run
+```
 
-###  JDBC
+## Spring Initializer
 
-Java Database Connectivity is a specification that provides a standard API for java applications to communicate with various databases.
+Download the required files for starting a spring project from [Spring Initializer](https://start.spring.io/).
+
+##  JDBC
+
+*Java DataBase Connectivity* is a specification that provides a standard API for java applications to communicate with various databases.
+
 Interacting with a database requires efficient database connectivity which can be achieved by using the ODBC (Open DataBase Connectivity) driver. This driver is used with JDBC to interact or communicate with various kinds of databases such as Oracle, MS Access and MySQL.
 
-### Components of JDBC
+JDBC has the following components:
 
 1. **JDBC API**: Provides various methods and interfaces for easy communication with the database.
 2. **JDBC Driver Manager**: Loads a database specific driver in a application to establish a connection with a database.
@@ -22,7 +35,7 @@ Interacting with a database requires efficient database connectivity which can b
 
 ### Inversion of Control
 
-IoC, also known as Dependency Injection, is a process whereby objects define their dependencies only through
+IoC, also known as *Dependency Injection*, is a process whereby objects define their dependencies only through
 constructor arguments, arguments to a factory method, or properties that are set on the object instance after it is constructed or returned from a factory method.
 
 ### Beans
@@ -38,7 +51,7 @@ The `BeanFactory` interface provides an advanced configuration mechanism capable
 ### Application Context
 
 The `ApplicationContext` is a sub-interface of the `BeanFactory`. It adds:
-- easier integration with Spring's AOP (Aspect Oriented Programming)  features
+- easier integration with Spring's AOP (Aspect Oriented Programming) features
 - message resource handling
 - event publication
 - application layer specific contexts such as the `WebApplicationContext` for use in web applications.
@@ -177,9 +190,6 @@ public class UserController {
 
 ## Database Connection
 
-
-### MongoDB
-
 ### PostgreSQL
 
 **src/main/resources/application.properties**
@@ -201,21 +211,6 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
     <scope>runtime</scope>
 </dependency>
 ```
-## Authentication
-
-## AWS SDK
-
-### S3
-
-### SQS
-
-### SNS
-
-## Eureka
-
-## Feign
-
-## Configuration
 
 ## Dockerfile
 
