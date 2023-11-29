@@ -21,3 +21,77 @@ To run the application:
 hypercorn app.asgi:app
 ```
 
+## Service Structure
+
+    app/
+    ├── api.py
+    ├── asgi.py
+    ├── config.py
+    ├── dependencies.py
+    ├── enums.py
+    ├── exceptions.py
+    ├── __init__.py
+    ├── models.py
+    ├── router.py
+    ├── schemas.py
+    ├── service.py
+    └── utils.py
+
+In case of multiple services, each service can be modularized with its own directory. Shared resources can be defined outside these folders.
+
+    .
+    ├── app/
+    │   ├── users/
+    │   │   ├── api.py
+    │   │   ├── config.py
+    │   │   ├── dependencies.py
+    │   │   ├── enums.py
+    │   │   ├── exceptions.py
+    │   │   ├── __init__.py
+    │   │   ├── models.py
+    │   │   ├── router.py
+    │   │   ├── schemas.py
+    │   │   ├── service.py
+    │   │   └── utils.py
+    │   ├── orders/
+    │   │   ├── api.py
+    │   │   ├── config.py
+    │   │   ├── dependencies.py
+    │   │   ├── enums.py
+    │   │   ├── exceptions.py
+    │   │   ├── __init__.py
+    │   │   ├── models.py
+    │   │   ├── router.py
+    │   │   ├── schemas.py
+    │   │   ├── service.py
+    │   │   └── utils.py
+    │   ├── asgi.py
+    │   ├── config.py
+    │   ├── dependencies.py
+    │   ├── enums.py
+    │   ├── exceptions.py
+    │   ├── __init__.py
+    │   ├── models.py
+    │   └── utils.py
+    ├── Dockerfile
+    ├── pyproject.toml
+    ├── readme.md
+    └── requirements.txt
+
+## Router Structure
+
+    app/
+    ├── api/
+    ├── config/
+    ├── models/
+    ├── routers/
+    ├── schemas/
+    ├── services/
+    ├── utils/
+    ├── asgi.py
+    ├── dependencies.py
+    ├── enums.py
+    ├── exceptions.py
+    └── __init__.py
+
+
