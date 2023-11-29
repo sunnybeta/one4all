@@ -2,7 +2,7 @@
 
 ### Problem
 
-We have code which does not behave in a certain manner, is incomptible, or some legacy code with a different API.
+We have code which does not behave in a certain manner, is incomptible, or is some legacy code with a different API.
 We would like this class / API to work in a certain way, implement particular functions and become compatible with the current practices.
 
 ### Solution
