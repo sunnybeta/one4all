@@ -1,7 +1,7 @@
 CC = java
-SRC = $(wildcard *.java)
+FILES = Abstraction Overloading Overriding Inheritance Encapsulation
 
-all: Abstraction Overloading Overriding Inheritance Encapsulation
+all: $(FILES)
 
 %: %.java
 	$(CC) $<

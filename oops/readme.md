@@ -1,10 +1,10 @@
 # Object-Oriented Programming System
 
-*Source*
+*SOURCE*
 
-https://www.youtube.com/@sudocode
+![SudoCode](https://www.youtube.com/@sudocode)
 
-https://www.geeksforgeeks.org
+![GeeksForGeeks](https://www.geeksforgeeks.org)
 
 ## Inheritance
 
