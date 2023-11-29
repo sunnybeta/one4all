@@ -8,95 +8,66 @@ This repository consists of my notes on programming fundamentals and few core te
 
 ### Core
 
-[Object-Oriented Programming System](oops)
-
-[SOLID Principles](solid)
-
-[Design Patterns](designpatterns)
-
-[Data Structures](datastructures)
-
-[Algorithms](algorithms)
-
-[System Design](systemdesign)
-
-[Database Theory](databases)
-
-[Front End](frontend)
-
-[Back End](backend)
-
-[Microservices](microservices)
-
-[System Design](systemdesign)
+- [Object-Oriented Programming System](oops)
+- [SOLID Principles](solid)
+- [Design Patterns](designpatterns)
+- [Data Structures](datastructures)
+- [Algorithms](algorithms)
+- [System Design](systemdesign)
+- [Database Theory](databases)
+- [Front End](frontend)
+- [Back End](backend)
+- [Microservices](microservices)
+- [System Design](systemdesign)
 
 ### Technologies
 
 **LANGUAGES**
 
-[C](https://github.com/sunnybeta/letmec)
-
-[Python](lang/python)
-
-[Java](lang/java)
-
-[Javascript](lang/javascript)
-
-[Go](lang/go)
-
-[Rust](lang/rust)
-
-[Haskell](lang/haskell)
+- [C](https://github.com/sunnybeta/letmec)
+- [Python](lang/python)
+- [Java](lang/java)
+- [Javascript](lang/javascript)
+- [Go](lang/go)
+- [Rust](lang/rust)
+- [Haskell](lang/haskell)
 
 **DATABASES**
 
-[PostgreSQL](databases/postgres)
-
-[MongoDB](databases/mongo)
+- [PostgreSQL](databases/postgres)
+- [MongoDB](databases/mongo)
 
 **BACK END**
 
-[FastAPI](backend/fastapi)
-
-[Spring](backend/spring)
-
-[Gin](backed/gin)
+- [FastAPI](backend/fastapi)
+- [Spring](backend/spring)
+- [Gin](backed/gin)
 
 **FRONT END**
 
-[VueJS](frontend/vue)
-
-[NextJS](frontend/next)
+- [VueJS](frontend/vue)
+- [NextJS](frontend/next)
 
 **AWS**
 
-[IAM](aws/iam)
-
-[Cloud Formation Template](aws/cft)
-
-[S3](aws/s3)
-
-[Simple Queue Service](aws/sqs)
-
-[Simple Notification Service](aws/sns)
-
-[Event Bridge](aws/eventbridge)
-
-[AWS CLI](aws/cli)
+- [IAM](aws/iam)
+- [Cloud Formation Template](aws/cft)
+- [S3](aws/s3)
+- [Simple Queue Service](aws/sqs)
+- [Simple Notification Service](aws/sns)
+- [Event Bridge](aws/eventbridge)
+- [AWS CLI](aws/cli)
 
 **CI/CD**
 
-[Docker](cicd/docker)
+- [Docker](cicd/docker)
+- [Kubenetes](cicd/k8s)
+- [Jenkins](cicd/jenkins)
+- [GitHub Actions](cicd/githubactions)
+- [Prometheus](cicd/prometheus)
+- [ArgoCD](cicd/argo)
 
-[Kubenetes](cicd/k8s)
-
-[Jenkins](cicd/jenkins)
-
-[GitHub Actions](cicd/githubactions)
-
-[Prometheus](cicd/prometheus)
-
-[ArgoCD](cicd/argo)
+Happy Learning :D
 
 ## ToDo
 
