@@ -1,7 +1,11 @@
 CC = java
-FILES = Abstraction Overloading Overriding Inheritance Encapsulation
+SRC = $(wildcard */*.java)
+OBJ = $(SRC:.java=.jar)
 
-all: $(FILES)
+all: $(OBJ)
 
-%: %.java
+%.jar: %.java
 	$(CC) $<
+
+clean:
+	rm -rf $(OBJ)

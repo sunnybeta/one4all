@@ -1,16 +1,12 @@
-# Object-Oriented Programming System
+<p align='center'>
+  <h1 align='center'>Object-Oriented Programming System</h1>
+</p>
 
-*SOURCE*
-
-![SudoCode](https://www.youtube.com/@sudocode)
-
-![GeeksForGeeks](https://www.geeksforgeeks.org)
+Thank you [SudoCode](https://www.youtube.com/@sudocode) and [GeeksForGeeks](https://www.geeksforgeeks.org).
 
 ## Inheritance
 
-- Inheritance is the concept in OOPs in which one class inherits the attributes and methods of another class.
-- The class whose properties and methods are inherited is known as the *Parent class* or *Superclass*. And the class that inherits the properties from the parent class is the *Child class* or *Subclass*.
-- Inheritance establishes a *is-a*  or *has-a* relation ship between two classes: `class A` *is-a* `class B`
+Inheritance is the concept in OOPs in which one class inherits the attributes and methods of another class. The class whose properties and methods are inherited is known as the *Parent class* or *Superclass*. And the class that inherits the properties from the parent class is the *Child class* or *Subclass*. Inheritance establishes a *is-a*  or *has-a* relation ship between two classes: `class A` *is-a* `class B`
 
 ```java
 class Inheritance {
@@ -48,13 +44,12 @@ class Employee extends Person {
 
 ## Polymorphism
 
-- Polymorphism is the ability of to take on different forms or behave in different ways depending on the context in which they are used.
-- Programming Languages use operator overloading and overriding to implement polymorphism concepts.
+Polymorphism is the ability of to take on different forms or behave in different ways depending on the context in which they are used. Programming Languages use **function overloading** and **function overriding** to implement polymorphism concepts.
 
 
 ### Overloading
 
-When methods with the same name is declared with different signatures, this is known as *function overloading*.
+When methods with the same name is declared with different signatures, it is known as *function overloading*.
 
 ```java
 public class Area {
@@ -75,7 +70,7 @@ public class Area {
 
 ### Overriding
 
-When a method in the subclass with the same name and signature as its method from the superclass is inherited and modified in the child class, this is known as *function overriding*.
+When a method in the subclass with the same name and signature as its method from the superclass is inherited and modified in the child class, it is known as *function overriding*.
 
 ```java
 class Overriding {
@@ -119,9 +114,7 @@ class Employee extends Person {
 
 ## Abstraction
 
-- Process of identifying the required characteristics and ignore the rest.
-- Property by virtue of which only essential details are displayed.
-- Languages uses `abstract` classes and `interface`s to implement the concept of encapsulation.
+Abstraction is the process of identifying the required characteristics and ignore the rest. It is the property by virtue of which only essential details are displayed. Programming languages use `abstract` classes and `interface`s to implement the concept of encapsulation.
 
 
 ```java
@@ -182,9 +175,11 @@ public class Tech extends Compute {
 
 ## Encapsulation
 
-- Encapsulation ensures that *sensitive* data is hidden from users.
-- Declare class variables/attributes and methods as `private` or `protected`
-- Provide public *getter* and *setter* methods to access and update the value of a private variable
+Encapsulation ensures that *sensitive* data is hidden from users. This concept is implemented by declaring the class variables  / attributes and methods as `private` or `protected`. In this case, the class may provide public *getter* and *setter* methods to access and / or update the value of a private or protected variable
+
+*Private attrubutes* can only be accessed by instances of the same class. These cannot be accessed directly via instances of another class.
+
+*Protected attrubutes* can be accessed by instances of the same class or a sub class.
 
 
 ```java
@@ -221,3 +216,5 @@ class Circle {
 	}
 }
 ```
+
+FIN

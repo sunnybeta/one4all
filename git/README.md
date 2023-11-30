@@ -156,3 +156,4 @@ git rebase my-awesome-branch
 git push
 ```
 
+FIN
