@@ -2,6 +2,8 @@
 
 *One repository for all your software engineering knowledge*
 
+The documentation of any project is better than the concise notes made here.
+
 Good Luck.
 
 ## Table of Contents
@@ -9,4 +11,5 @@ Good Luck.
 - [Docker](/docker)
 - [Git](/git)
 - [OOPS](/oops)
+- [Go](/go)
 
