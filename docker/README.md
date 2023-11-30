@@ -192,7 +192,7 @@ docker run -d -p localport:dockerport -v name:/var/lib/mysql/data --name CONTAIN
 [Answer](https://stackoverflow.com/questions/21553353/what-is-the-difference-between-cmd-and-entrypoint-in-a-dockerfile) by [Daishi](https://stackoverflow.com/users/2003537/daishi)
 
 The `ENTRYPOINT` specifies a command that will always be executed when the container starts.
-The `CMD` specifies arguments that will be fed to the ENTRYPOINT.
+The `CMD` specifies arguments that will be fed to the `ENTRYPOINT`.
 
 If you want to make an image dedicated to a specific command, you will use
 
