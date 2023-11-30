@@ -1,8 +1,7 @@
-# Docker
-
-| ![Docker]("public/docker.jpg") |
-|:--:|
-| Credits: *[Laurel (@bloglaurel)](https://www.deviantart.com/bloglaurel/gallery)* |
+<p align='center'>
+    <img src="public/docker.jpg" width=100% alt=Docker caption='Laurel (@bloglaurel) deviantart.com/bloglaruel/gallery'>
+    <h1 align='center'>Docker</h1>
+</p>
 
 ## Open Container Initiative 
 
