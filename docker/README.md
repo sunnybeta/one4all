@@ -187,10 +187,30 @@ Named volume provides a name to the volume mounted so that it can be referenced 
 docker run -d -p localport:dockerport -v name:/var/lib/mysql/data --name CONTAINER_NAME IMAGE_NAME 
 ```
 
+## CMD vs ENTRYPOINT
+
+[Answer](https://stackoverflow.com/questions/21553353/what-is-the-difference-between-cmd-and-entrypoint-in-a-dockerfile) by [Daishi](https://stackoverflow.com/users/2003537/daishi)
+
+The `ENTRYPOINT` specifies a command that will always be executed when the container starts.
+The `CMD` specifies arguments that will be fed to the ENTRYPOINT.
+
+If you want to make an image dedicated to a specific command, you will use
+
+```dockerfile
+ENTRYPOINT ["/path/dedicated_command"]
+```
+
+Otherwise, if you want to make an image for general purpose, you can leave `ENTRYPOINT` unspecified and use
+
+```dockerfile
+CMD ["/path/dedicated_command"]
+```
+
+as you will be able to override the setting by supplying arguments to `docker run`.
 
 ## Compose
 
-We can map the entire docker run command for different docker iamges into one file and execute the simultaneously.
+We can map a sequence of `docker run` commands for different docker iamges and run them on the same network via a single file and build a network with all the images simultaneously.
 If the filename is `docker-compose.yml`, we can skip the `-f` flag and docker will recognize the file correctly.
 
 ```yaml
