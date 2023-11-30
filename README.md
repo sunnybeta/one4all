@@ -1,10 +1,8 @@
 # One4All: Software Engineering
 
-*One repository for all your software engineering needs*
+*One repository for all your software engineering knowledge*
 
-This repository consists of my notes on programming fundamentals and few core technologies.
-
-![Good Luck](public/ganbare.gif)
+Good Luck.
 
 ## Table of Contents
 
