@@ -50,9 +50,9 @@ GET  /redirect 302 Not Authenticated Rate Limiting Maybe :/
 ### Attempt 2
 
                                                 Monitoring Service
-                                      --> First Server ---+
-    User -> Internet -> Load Balancer --> Second Server- -|-----> Data Store 
-                                      --> Third Server ---+
+                                      --> First Server  ---+
+    User -> Internet -> Load Balancer --> Second Server ---|-----> Data Store 
+                                      --> Third Server  ---+
     - Highly Scalable
     - Minimize Cost
 
