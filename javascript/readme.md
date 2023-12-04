@@ -1,27 +1,33 @@
-# Javascrip Fundamentals
+# Javascript Fundamentals
+
+## What is Javascript?
+
+**Javascript is a synchronous single-threaded programming language.**
 
 ## Execution Context
 
 Everything in Javascript happens inside an **Execution Context**.
 The execution context has two components:
 - **Memory Component**: All variables and functions are stored here as key value pairs. This is also knowns as *variable environment*.
-- **Coded Component**: Here the code is executed one line at a time. This is also known as *Thread of Execution*
+- **Code Component**: Here the code is executed one line at a time. This is also known as *Thread of Execution*
 
 Everytime a function is invoked, a new execution context is created.
 This execution is immediately deleted after its job is complete.
-**Javascript is a synchronous single-threaded language.**
+
 
 ## Call Stack
 
-The call stack maintains the order of execution of the execution context.
+The **call stack** maintains the order of execution of the execution context.
 
-Whenever a code is executed, a global execution context is pushed onto the stack. When a new function is invoked, it is pushed onto the stack. After the completion of a function, the execution context is then popped off the stack.
+Whenever a code is executed, a *global execution context* is pushed onto the stack.
+When a new function is invoked, it is pushed onto the stack.
+After the completion of a function, the execution context is then popped off the stack.
 
 ## Hoisting
 
-Hoisting is a phenomenon in javascript by which we can access variable and functions without initializing it without an error.
+**Hoisting** is a phenomenon in javascript by which we can access variable and functions without initializing it without an error.
 
-Note: Arrow functions behave like variables. So it cannot be accessed before reaching the initialization.
+NOTE Arrow functions behave like variables. So it cannot be accessed before reaching the initialization.
 
 ## Hello World
 
@@ -33,7 +39,7 @@ Whenever we run a javascript program: three global variables are created: a glob
 
 ## Scope
 
-Scope of a variable is the parts of the code where the variable can be accessed.
+**Scope** of a variable is the parts of the code where the variable can be accessed.
 When searching for a variable for reference, javascript looks for the variable in the lexical environment.
 
 *Lexical environment is simply the current local environment and the parent environment*
@@ -43,7 +49,7 @@ This creates a chain of scopes and is known as the *scope chain*.
 
 ## Temporal Dead Zone
 
-The time between hoisting and initialization fo a variable is called its temporal dead zone.
+The time between hoisting and initialization fo a variable is called its **temporal dead zone**.
 
 To avoid temporal deadzone, tryi keeping all declarations and initilaizations on the top of your code (function).
 
@@ -304,15 +310,17 @@ let myPromise = new Promise((resolve,reject) => {
     // process & call resolve / reject
 });
 
-myPromise.then(
+myPromise
+.then(
     function() { /* code if successful */},
+).catch(
     function() { /* code if caught error */},
 );
 ```
 
 The Promise object supports two properties: `state` and `result`.
 
-A Promise object can be:
+A Promise object can be of state:
 
 - Pending
 - Fulfilled
@@ -351,13 +359,13 @@ api1(1).then(() => api2()).catch((err) => api3())
 
 ## == vs ===
 
-The '==' operator does a loose quality comparison and performs type modifications if required for the comparison to be possible.
-On the other hand, the '===' operator performs a strict comparison and expects the operands to have the same type.
+The '==' operator does a *loose quality comparison* and performs type modifications if required for the comparison to be possible.
+On the other hand, the '===' operator performs a *strict comparison* and expects the operands to have the same type.
 
 
 ## 3 - '3'
 
-Subtraction operation is performed naturally with an integer
+Subtraction operation is performed naturally with an integer.
 Addition with atleast string always converts it to a string.
 
 ```javascript
@@ -371,7 +379,7 @@ Addition with atleast string always converts it to a string.
 3+3 === 6
 ```
 
-*Note*
+NOTE: Understand the below examples
 
 ```javascript
 '2'+'2'-'2' === 20 // true
