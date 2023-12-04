@@ -1,5 +1,34 @@
 # Python
 
+## Installation
+
+Visit the official website [here](https://python.org).
+
+## Hello World
+
+```python
+print('Hello, World!')
+```
+
+Save the above line of code in a file named `hello.py`. Execute the command:
+
+```bash
+python hello.py
+```
+
+Congratulations! You've written your first python program.
+
+
+## Lists
+
+A `list` is a complex data type in Python which stores a collection of elements (possibly different types) in a `0`-indexed sequence.
+
+```python
+lst = ['Hello', 216, {'key':'value'}]
+print(lst[0], lst[2])
+# 'Hello', {'key':'value'}
+```
+
 ## Context Manager
 
 Context Managers help us execute code within the `with` statement  handling setup and tear down code.
@@ -35,3 +64,4 @@ Setup
 NOICELY DONE :O :O
 Tear Down
 ```
+

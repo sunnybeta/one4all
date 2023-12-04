@@ -1,4 +1,4 @@
-# Java Fundamentals
+# Java
 
 ## Annotations
 
@@ -94,7 +94,7 @@ public clas AnonymousInnerClasses {
                 System.out.println("Groaijfdoinqleknal");
             }
         };
-        bigfoot.makeNouse();
+        bigfoot.makeNoise();
 
         // anonymous interface
         Runnable myAnonymouseRunnable = new Runnable() {
@@ -290,5 +290,4 @@ Reduce method is used to reduce the stream to a single value.
 List nums = Arrays.asList(5,4,3,2);
 int even = nums.stream().reduce(0, (ans, i) -> ans + i);
 ```
-
 

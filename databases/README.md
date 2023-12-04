@@ -63,6 +63,9 @@ To deal with outages on a shard, we can consider implementing a leader / followe
 - Operationally complex
 - Cross Shard Queries
 
-## B+ Trees
+## Database Internal
 
-Coming Soon.
+A database has two components:
+
+- **Storage Engine** Storage, Indexes, Data Files, Transactions
+- **Front End** API & Data Format

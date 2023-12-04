@@ -11,5 +11,15 @@ Good Luck.
 - [Docker](/docker)
 - [Git](/git)
 - [OOPS](/oops)
+
+- [Databases](/databases)
+
+- [Python](/python)
+- [Javascript](/javascript)
 - [Go](/go)
-- [URL Shortner](/urlshortner)
+- [Rust](/rust)
+
+- [CI/CD](/cicd)
+- [Github Actions](/githubactions)
+- [Kubernetes](/k8s)
+
