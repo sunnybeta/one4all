@@ -8,18 +8,25 @@ Good Luck.
 
 ## Table of Contents
 
-- [Docker](/docker)
-- [Git](/git)
+### Base
 - [OOPS](/oops)
+- [Git](/git)
 
-- [Databases](/databases)
+### Database
+- [Introdcution](/databases)
 
+### Languages
 - [Python](/python)
 - [Javascript](/javascript)
 - [Go](/go)
 - [Rust](/rust)
 
-- [CI/CD](/cicd)
+### Front End
+- [Redux](/redux)
+
+### CI/CD
+- [Introduction](/cicd)
+- [Docker](/docker)
 - [Github Actions](/githubactions)
 - [Kubernetes](/k8s)
 
