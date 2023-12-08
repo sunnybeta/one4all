@@ -1,6 +1,7 @@
 # Binary
 bin/
-bst
+bst/bst
+stack/stack
 
 # Node
 node_modules/
