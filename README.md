@@ -30,3 +30,10 @@ Good Luck.
 - [Github Actions](/githubactions)
 - [Kubernetes](/k8s)
 
+### Data Structures
+- [Stack](/stack)
+- [Queue](/queue)
+- [Set](/set)
+
+### Algorithms
+- [Dynamic Programming](/dynamicprogramming)
