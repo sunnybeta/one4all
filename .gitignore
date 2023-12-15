@@ -15,3 +15,6 @@ server
 # Python
 .venv
 __pycache__/
+
+# React Native
+.expo/
