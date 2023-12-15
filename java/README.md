@@ -1,5 +1,58 @@
 # Java
 
+## JVM
+
+**JVM (Java Virtual Machine)** is a virtual machine that enables a computer to run java programs as well as programs ino other anguages that are also compiled to java bytecode.
+
+- We write code in the Java language.
+- The Java compiler converts your Java program into byte code.
+- JVM can now execute this byte code.
+
+If you application, consists of multiple files, JVM would also require the file where the execution would start.
+This file must consist the `main` function.
+
+Whenever we run a program, it runs inside a **JRE (Java Runtime Environment)**. JVM and the java libraries constitute the JRE.
+
+## Java Garbage Collector
+
+Garbage collection is the automated process of freeing up mempry space that's no longer needed or used by the program.
+
+Objects in Java are produced on the heap (mempry space for dynamic allocation) which are then monitored by the garbage collectior.
+
+Most objects used in Java code are short-lived and can be reclaimed shortly after they are created.
+garbage collector uses a **mark-and-sweep- algorithm** to mark all unreachable objects for garbage collection, then scans through live objects to find objects that are still reachable.
+For efficient garbage collection, the JVM separates the heap into separate spaces.
+
+**Eden**
+
+The eden space in Java is a mempry pool where objects are created. When the eden space is full, the garbage collector either remoes objects if they are no longer in use or stores them  in the memory heap.
+
+**Survivor**
+
+There are two survivor spaces in the JVM: survivor zero and survivor one. This space is also part of the young generation.
+
+**Tenured**
+
+The tenured soace is where long-livved objects are stored. Objects are eventually movde to this space if tey survive a certain number of garbage collection cycles.
+
+### Mark-and-Sweep
+
+- When a java object is created in the heap, it has a mark bit that is set to 0.
+- During the mark phase, the garbage collector traverses object trees starting at their roots. When an object is reachable from the root, the mark bit is set to 1. Meanwhile, the mark bits for unreachable objects is unchanged.
+- During the sweep phase, the garbage collector traverses the heap, reclaiming memory from all items with a mark bit of 0.
+
+## Strings
+
+- Strings are immutable in Java
+- We can access characters in a string with ther `charAt` method
+
+### String Buffer vs String Builder
+
+The major difference between both is that `StringBuffer` is synchronized while `StringBuilder` is not which makes `StringBuilder` faster.
+
+Simlply use `StringBuilder` unless you're trying to share a buffer between two threads.
+
+
 ## Annotations
 
 Annotations are metadata / supplemental information into your Java code.
