@@ -16,7 +16,7 @@ Good Luck.
 - [Introdcution](/databases)
 
 ### Languages
-- Python
+- [Python](/python)
 - [Javascript](/javascript)
 - [Go](/go)
 - Java
@@ -25,7 +25,7 @@ Good Luck.
 ### Front End
 - HTML
 - CSS
-- React
+- [React](/react)
 - Vue
 - NextJS
 - [Redux](/redux)

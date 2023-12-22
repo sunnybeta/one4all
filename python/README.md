@@ -65,3 +65,22 @@ NOICELY DONE :O :O
 Tear Down
 ```
 
+## Deque
+
+Deque is the queue implementation in Python.
+
+```python
+from collections import deque
+
+q = deque()
+
+q.append(5) # [5]
+q.append(6) # [5,6]
+q.pop() # [5]
+q.insert(0,1) # [1,5]
+q.popleft() # [5]
+q.insert(0,19) # [19,5]
+
+print(q[0] + q[1]) # 24
+```
+
