@@ -3,9 +3,39 @@
 
 ## Init
 
+To create a React project in the current directory, run the following commands:
+
 ```bash
 npm create vite@latest
+npm i
 ```
+
+Select the appropriate options and you'll have a boilerplate ready.
+
+## Project Structure
+
+I typically like to structure my project as follows:
+
+    ├── index.html
+    ├── package-lock.json
+    ├── package.json
+    ├── public/
+    ├── readme.md
+    ├── src/
+    │   ├── assets/
+    │   │   ├── globals.css
+    │   │   └── logo.png
+    │   ├── components/
+    │   ├── pages/
+    │   ├── index.jsx
+    │   └── App.jsx
+    └── vite.config.json
+
+---
+
+# React Tips
+
+* Do not over kill your application with components. Most of your work can be done without them.
 
 ---
 
@@ -92,3 +122,47 @@ useEffect((
 
 - The `useEffect` hook will always run once when the component is mounted.
 
+## UseContext
+
+- Context is a way for you to have shared data which is accessible across differnet components without passing props. 
+
+### Code
+
+```ts
+// Declaration
+import { createContext } from 'react';
+
+export const MyContext = createContext<myInterface | undefined>(undefined);
+
+// Custom Hook
+
+export function useUserContext() {
+    const myAnotherObject = useContext(MyContext);
+    if (myAnotherObject === undefined) {
+        throw new Error('Context mst be used within a provider')
+    }
+    return myAnotherObject;
+}
+```
+
+```ts
+// Provider
+<MyContext.Provider value={myObject}>
+    <MyComponent />
+</MyContext.Provider>
+```
+
+```ts
+// Consumer
+import { useContext } from 'react';
+
+const myAnotherComponent = () => {
+    const myAnotherObject = useContext(myAwesomeContext);
+    return (
+        <h1>{myAnotherObject.name}</h1>
+    )
+}
+
+```
+
+```ts

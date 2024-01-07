@@ -31,10 +31,6 @@ I typically like to structure my project as follows:
 ## Components
 TBA
 
-## Hooks
-
-TBA
-
 ## React Tips
 
 * Do not over kill your application with components. Most of your work can be done without them.
